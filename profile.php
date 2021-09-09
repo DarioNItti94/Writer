@@ -3,8 +3,7 @@ include "lib.inc.php";
 
 $smarty = includesmarty();
 $id_logged = $_SESSION["id"];
-
-$sql = "SELECT first_name FROM customer WHERE id=" . $id_logged;
+$sql = "SELECT first_name FROM user WHERE id=" . $id_logged;
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 $user=$row['first_name'];
