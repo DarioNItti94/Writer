@@ -4,6 +4,6 @@ include "lib.inc.php";
 $smarty=includesmarty();
 
 
-$smarty->display("Error.tpl");
+$smarty->display("404.tpl");
 
 

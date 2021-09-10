@@ -19,4 +19,4 @@ $citta= mysqli_real_escape_string($con,$citta);
 $sql="INSERT INTO customer_address(name, recipient, optional_info, street, town, province, postcode, state, customer_id) VALUES 
     ('$nome','$utente','$info','$via','$citta','$prov','$cap','$stato',$id_logged)";
 $con->query($sql);
- header("Location:Address.php");
+ header("Location:profile.php");

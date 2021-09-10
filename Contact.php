@@ -1,4 +1,4 @@
 <?php
 include "lib.inc.php";
 $smarty = includesmarty();
-$smarty->display("Contact.tpl");
+$smarty->display("contact.tpl");

@@ -146,7 +146,7 @@
                                     <li><a href="checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
-                            <li><h4><a href="contact.html">CONTATTI</a></h4></li>
+                            <li><h4><a href="Contact.php">CONTATTI</a></h4></li>
                         </ul>
                     </nav>
                 </div>

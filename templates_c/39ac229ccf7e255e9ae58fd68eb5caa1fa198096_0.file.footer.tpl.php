@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-08 19:47:32
+/* Smarty version 3.1.39, created on 2021-09-10 17:57:43
   from 'C:\xampp\htdocs\Writer\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6138f734641d26_83288518',
+  'unifunc' => 'content_613b80773879d3_80033649',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39ac229ccf7e255e9ae58fd68eb5caa1fa198096' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\footer.tpl',
-      1 => 1631113161,
+      1 => 1631289462,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6138f734641d26_83288518 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613b80773879d3_80033649 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
     <div class="footer-top-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-8">
+                <div class="col-md-3 col-sm-8" style="margin-left: 150px">
                     <div class="footer-left">
                         <a href="index.tpl">
                             <img src="img/logo-2.png" alt="">
@@ -47,45 +47,23 @@ function content_6138f734641d26_83288518 (Smarty_Internal_Template $_smarty_tpl)
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="single-footer">
-                        <h2 class="footer-title">Information</h2>
-                        <ul class="footer-list">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Privacy & Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Manufactures</a></li>
-                        </ul>
-                    </div>
-                </div>
+
                 <div class="col-md-2 hidden-sm">
                     <div class="single-footer">
                         <h2 class="footer-title">My Account</h2>
                         <ul class="footer-list">
-                            <li><a href="my-account.tpl">My Account</a></li>
+                            <li><a href="profile.php">Account</a></li>
                             <li><a href="account.html">Login</a></li>
-                            <li><a href="cart.html">My Cart</a></li>
+                            <li><a href="cart.html">Carrello</a></li>
                             <li><a href="wishlist.html">Wishlist</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 hidden-sm">
-                    <div class="single-footer">
-                        <h2 class="footer-title">Shop</h2>
-                        <ul class="footer-list">
-                            <li><a href="#">Orders & Returns</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                            <li><a href="#">Advance Search</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Group Sales</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-8">
-                    <div class="single-footer footer-newsletter">
-                        <h2 class="footer-title">Our Newsletter</h2>
-                        <p>Consectetur adipisicing elit se do eiusm od tempor incididunt ut labore et dolore magnas aliqua.</p>
+
+                <div class="col-md-5 col-md-8">
+                    <div class="single-footer footer-newsletter" >
+                        <h2 class="footer-title">Newsletter</h2>
                         <form action="#" method="post">
                             <div>
                                 <input type="text" placeholder="email address">
@@ -117,35 +95,13 @@ function content_6138f734641d26_83288518 (Smarty_Internal_Template $_smarty_tpl)
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 visible-sm">
-                    <div class="single-footer">
-                        <h2 class="footer-title">Shop</h2>
-                        <ul class="footer-list">
-                            <li><a href="#">Orders & Returns</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                            <li><a href="#">Advance Search</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Group Sales</a></li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-bottom-left pull-left">
-                        <p>Copyright &copy; 2016 <span><a href="https://freethemescloud.com/">Free themes Cloud</a></span>. All Right Reserved.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-bottom-right pull-right">
-                        <img src="img/paypal.png" alt="">
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </footer>
@@ -217,6 +173,5 @@ function content_6138f734641d26_83288518 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  src="js/main.js"><?php echo '</script'; ?>
 >
-</body>
-</html><?php }
+<?php }
 }

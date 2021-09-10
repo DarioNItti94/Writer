@@ -21,7 +21,8 @@
 	  itemsDesktopSmall : [991,3],
 	  itemsTablet: [767,2],
 	  itemsMobile : [479,1],
-  }); 
+  });
+
 /*----------------------------
  Featured Product List owl active
 ------------------------------ */  
@@ -218,4 +219,6 @@ Blog list owl active
 	jQuery('nav#dropdown').meanmenu();  
     
 })(jQuery);
+
+
 

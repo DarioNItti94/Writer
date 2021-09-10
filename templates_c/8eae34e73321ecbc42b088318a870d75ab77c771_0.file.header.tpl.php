@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-08 19:47:32
+/* Smarty version 3.1.39, created on 2021-09-10 17:54:09
   from 'C:\xampp\htdocs\Writer\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6138f7345c94f5_17422217',
+  'unifunc' => 'content_613b7fa1da5ae4_63390592',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eae34e73321ecbc42b088318a870d75ab77c771' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header.tpl',
-      1 => 1631112340,
+      1 => 1631289247,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6138f7345c94f5_17422217 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613b7fa1da5ae4_63390592 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html class="no-js" lang="it">
 <head>
@@ -176,7 +176,7 @@ function content_6138f7345c94f5_17422217 (Smarty_Internal_Template $_smarty_tpl)
                                     <li><a href="checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
-                            <li><h4><a href="contact.html">CONTATTI</a></h4></li>
+                            <li><h4><a href="Contact.php">CONTATTI</a></h4></li>
                         </ul>
                     </nav>
                 </div>

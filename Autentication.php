@@ -26,6 +26,7 @@ if ($num == 1 AND $role==2) {
     $_SESSION['user'] = $email;
     $_SESSION['customer_id']=$user_id;
     $_SESSION['user_name']=$row["first_name"];
+    $_SESSION['logged_in'] = true;
     header('location:Profile.php');
 } else {
     $email = $_POST['email-log'];

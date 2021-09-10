@@ -18,7 +18,7 @@
                                     <li><a href="checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="contact.tpl">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,14 +58,31 @@
                                         <p class="coupon-text">Ecco gli ordini che hai effettuato</p>
                                         <div class="order-history">
                                             <div class="alert">
-                                                {if (!empty($books))}
-                                                {foreach from=$books item="book"}
-
-                                                {/foreach}
-                                                {else}
-                                            </div>
-                                            {/if}
-
+                                                <section>
+                                                    <br>
+                                                    {if (!empty($orders))}
+                                                        {foreach from=$orders item="order"}
+                                                            <div class="order card">
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-6 col-md-4">
+                                                                            <img src="{$order.pic}" alt="Order" width="150" height="170" style="float: left;">
+                                                                        </div>
+                                                                        <div class="col-12 col-md-8 option">
+                                                                            <h3 class="card-title" style="margin-bottom: -10px">{$order.title}</h3>
+                                                                            <br><br>
+                                                                            <p>Stato: {$order.status}</p>
+                                                                            <h3 class="card-text" id="price">{$order.subtotal}€</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {/foreach}
+                                                    {else}
+                                                        <div></div>
+                                                    {/if}
+                                                </section>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -87,13 +104,32 @@
                                     <div class="coupon-info">
                                         <p class="coupon-text">I tuoi Indirizzi</p>
                                         <div class="order-history">
-                                            <div class="alert">   {if (!empty($books))}
-                                                {foreach from=$books item="book"}
+                                            <div class="alert">
+                                                {if !empty($addresses)}
+                                                    {foreach from=$addresses item="addr"}
+                                                        <div class="order card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-6 col-md-4">
+                                                                        <h4>{$addr.street}</h4>
+                                                                    </div>
 
-                                                {/foreach}
+                                                                    <div class="col-12 col-md-8 option">
+                                                                        <form method="post" action="del_addr.php">
+                                                                            <input type="hidden" name="id_addr" value="{$addr.id}">
+                                                                            <input class="btn-input btn" type="submit" value="Elimina Indirizzo">
+                                                                        </form>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {/foreach}
                                                 {else}
+                                                    <div></div>
+                                                {/if}
                                             </div>
-                                            {/if}
+
                                         </div>
                                     </div>
                                 </div>
@@ -113,8 +149,8 @@
                                  aria-labelledby="headingFour">
                                 <div class="panel-body">
                                     <div class="coupon-info">
-                                        <p class="coupon-text">To add a new address, please fill out the form below.</p>
-                                        <form action="#">
+                                        <p class="coupon-text">Aggiungi un nuovo indirizzo.</p>
+                                        <form action="Add-Address.php" method="post">
                                             <p class="form-row">
                                                 <input type="text" placeholder="Casa/Ufficio" name="name"/>
                                             </p>
@@ -145,12 +181,7 @@
                                             <p class="form-row order-notes">
                                                 <textarea placeholder="Additional information"></textarea>
                                             </p>
-                                            <a title="Save" class="btn button button-small" href="index.tpl">
-														<span>
-															  Save
-															<i class="fa fa-chevron-right"></i>
-														</span>
-                                            </a>
+                                            <input type="submit" class="btn button button-small" value="Salva" >
                                         </form>
                                     </div>
                                 </div>
@@ -166,8 +197,8 @@
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                                        href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <i class="fa fa-list-ol"></i>
-                                        <span>I miei ordini</span>
+                                        <i class="fa fa-heart"></i>
+                                        <span>Wishlist</span>
                                     </a>
                                 </h4>
                             </div>
@@ -175,7 +206,7 @@
                                  aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <div class="coupon-info">
-                                        <p class="coupon-text">Ecco gli ordini che hai effettuato</p>
+                                        <p class="coupon-text">Ecco i tuoi libri preferiti</p>
                                         <div class="order-history">
                                             <div class="alert">
                                                 {if (!empty($books))}
