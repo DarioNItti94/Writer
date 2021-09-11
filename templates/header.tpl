@@ -158,9 +158,8 @@
                             <a href="Login.php"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
-                            <a href="#">
+                            <a href="Cart.php">
                                 <i class="flaticon-shop"></i>
-                                <span>2</span>
                         </li>
                     </ul>
                 </div>

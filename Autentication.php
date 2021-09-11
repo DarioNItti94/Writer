@@ -44,7 +44,7 @@ if ($num == 1 AND $role==2) {
         session_regenerate_id();
         $_SESSION['id'] = session_id();
         $_SESSION['user'] = $email;
-        header('location:Upload-product.php');
+        header('location:Dashboard.php');
     } else {
         $smarty->display("Error.php");
 

@@ -7,7 +7,7 @@ if (!isset($_SESSION['user'])) {
     $smarty->display("login.tpl");
     exit;
 } elseif ($_SESSION['user'] == $admin){
-header("Location:Upload-product.php");
+header("Location:Dashboard.php");
 } else {
     header("Location:profile.php");
 }
