@@ -64,7 +64,7 @@ if ($num == 1) {
         $book_author="INSERT INTO book_author(author_id, book_id) VALUES ($last_id_author,$last_id_book)";
         $con->query($book_author);
         $con->query($book_category);
-        header('location:Dashboard.php');
+        header('location:All-product.php');
 
     } else {
         header('location:Error.php');

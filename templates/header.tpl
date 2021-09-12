@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
-                    <a href="index.tpl">
+                    <a href="index.php">
                         <img src="./templates/img/logo.png" alt="">
                     </a>
                 </div>
@@ -160,6 +160,7 @@
                         <li class="shoping-cart">
                             <a href="Cart.php">
                                 <i class="flaticon-shop"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>

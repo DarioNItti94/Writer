@@ -138,7 +138,7 @@
 								<span class="fcount">
 									<span class="counter">{$read}</span>
 								</span>
-                        <h3>BOOKS READ</h3>
+                        <h3>OUR BOOKS</h3>
                     </div>
                 </div>
             </div>

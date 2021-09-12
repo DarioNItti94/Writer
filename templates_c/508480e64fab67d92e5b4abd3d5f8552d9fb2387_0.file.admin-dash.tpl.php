@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-11 17:57:42
+/* Smarty version 3.1.39, created on 2021-09-12 10:34:52
   from 'C:\xampp\htdocs\Writer\templates\admin-dash.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613cd1f6e5c0c0_24968629',
+  'unifunc' => 'content_613dbbac39ce89_40865589',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '508480e64fab67d92e5b4abd3d5f8552d9fb2387' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\admin-dash.tpl',
-      1 => 1631375830,
+      1 => 1631435573,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_613cd1f6e5c0c0_24968629 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Deshboard'), 0, false);
+function content_613dbbac39ce89_40865589 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
 <!-- partial -->
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome Aamir</h3>
+                  <h3 class="font-weight-bold">Benvenuto Epic Admin</h3>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Today’s Bookings</p>
+                      <p class="mb-4">Libri nel sistema</p>
                       <p class="fs-30 mb-2">4006</p>
                       <p>10.00% (30 days)</p>
                     </div>

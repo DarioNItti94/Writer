@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-11 16:50:21
+/* Smarty version 3.1.39, created on 2021-09-12 15:53:42
   from 'C:\xampp\htdocs\Writer\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613cc22d261049_02695215',
+  'unifunc' => 'content_613e0666268643_51430354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '74c9233726b37e36cd20fd70397755b78fa08394' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\index.tpl',
-      1 => 1631369147,
+      1 => 1631435638,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613cc22d261049_02695215 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613e0666268643_51430354 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Home'), 0, false);
 ?>
 
@@ -172,7 +172,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 									<span class="counter"><?php echo $_smarty_tpl->tpl_vars['read']->value;?>
 </span>
 								</span>
-                        <h3>BOOKS READ</h3>
+                        <h3>OUR BOOKS</h3>
                     </div>
                 </div>
             </div>

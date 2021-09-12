@@ -37,7 +37,6 @@
                             <p class="form-row">
                                 <input type="password" placeholder="Password" name="password-log">
                             </p>
-
                             <div class="submit">
                                 <input name="login" type="submit"  value="Accedi" class="btn-default">
                             </div>

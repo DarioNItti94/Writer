@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-09 16:26:53
+/* Smarty version 3.1.39, created on 2021-09-12 16:00:14
   from 'C:\xampp\htdocs\Writer\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613a19ad529238_43033908',
+  'unifunc' => 'content_613e07ee55c3b1_62022515',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7dd52d6fabec8f803ae8872bf34bc69010b6f03d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\login.tpl',
-      1 => 1628675438,
+      1 => 1631455101,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613a19ad529238_43033908 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613e07ee55c3b1_62022515 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Accedi'), 0, false);
 ?>
 
@@ -63,7 +63,6 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
                             <p class="form-row">
                                 <input type="password" placeholder="Password" name="password-log">
                             </p>
-
                             <div class="submit">
                                 <input name="login" type="submit"  value="Accedi" class="btn-default">
                             </div>
