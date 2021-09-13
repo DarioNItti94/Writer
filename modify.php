@@ -28,7 +28,7 @@ $pub = "SELECT * FROM publisher INNER JOIN book ON book.id=".$id;
 $result_pub = mysqli_query($con, $pub);
 $publisher = mysqli_fetch_array($result_pub);
 
-$cat="SELECT * FROM category INNER JOIN book_category ON book_id=".$id;
+$cat="SELECT book_category.category_id FROM category INNER JOIN book_category ON book_category.category_id=category.id INNER JOIN book ON book_category.book_id=".$id;
 $result_category=mysqli_query($con,$cat);
 $category=mysqli_fetch_array($result_category);
 

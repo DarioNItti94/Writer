@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-md-3 col-sm-8" style="margin-left: 150px">
                     <div class="footer-left">
-                        <a href="index.tpl">
-                            <img src="img/logo-2.png" alt="">
+                        <a href="index.php">
+                            <img src="./templates/img/logo-2.png" alt="">
                         </a>
                         <p>WRITER BOOK<br> ONLINE STORE.</p><br>
                         <ul class="footer-contact">

@@ -77,7 +77,7 @@
                             <div class="add-to-cart-product">
                                 <div class="cart-product">
                                     <div class="cart-product-image">
-                                        <a href="single-product.html">
+                                        <a href="Product-item.tpl">
                                             <img src="./templates/img/shop/1.jpg" alt="">
                                         </a>
                                     </div>
@@ -85,9 +85,9 @@
                                         <p>
                                             <span>1</span>
                                             x
-                                            <a href="single-product.html">East of eden</a>
+                                            <a href="Product-item.tpl">East of eden</a>
                                         </p>
-                                        <a href="single-product.html">S, Orange</a>
+                                        <a href="Product-item.tpl">S, Orange</a>
                                         <span class="cart-price">$ 140.00</span>
                                     </div>
                                     <div class="cart-product-remove">
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="cart-product">
                                     <div class="cart-product-image">
-                                        <a href="single-product.html">
+                                        <a href="Product-item.tpl">
                                             <img src="./templates/img/shop/1.jpg" alt="">
                                         </a>
                                     </div>
@@ -104,9 +104,9 @@
                                         <p>
                                             <span>1</span>
                                             x
-                                            <a href="single-product.html">East of eden</a>
+                                            <a href="Product-item.tpl">East of eden</a>
                                         </p>
-                                        <a href="single-product.html">S, Orange</a>
+                                        <a href="Product-item.tpl">S, Orange</a>
                                         <span class="cart-price">$ 140.00</span>
                                     </div>
                                     <div class="cart-product-remove">

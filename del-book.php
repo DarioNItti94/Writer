@@ -7,7 +7,6 @@ $id_pubblisher=$_POST["pub"];
 $id_category=$_POST["category"];
 
 
-
 $sql_author="DELETE FROM author WHERE id=".$id_author;
 $con->query($sql_author);
 

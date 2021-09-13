@@ -77,20 +77,19 @@
                                     <div class="col-sm-3">
                                         <div class="thumb-wrapper">
 
-                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                             <div class="img-box">
-                                                <img src="/examples/images/products/ipad.jpg" class="img-responsive"
+                                                <a href="Product-item.php?id={$book.id}">
+                                                <img src="{$book.pic}" class="img-responsive"
                                                      alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>libro</h4>
+                                                <h4>{$book.title}</h4>
                                                 <div class="star-rating">
-
                                                 </div>
-                                                <p class="item-price"><b>$369.00</b></p>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <p class="item-price"><b>{$book.price}€</b></p>
                                             </div>
                                         </div>
+                                    </a>
 
                                     </div>
                                 {/foreach}
@@ -101,20 +100,6 @@
                         </div>
                     </div>
                 </div>
-
-                {if (!empty($books))}
-
-                <!-- Carousel controls -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
-
-                </a>
-                {else}
-                    <div></div>
-                {/if}
             </div>
         </div>
     </div>

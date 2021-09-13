@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-10 17:57:43
+/* Smarty version 3.1.39, created on 2021-09-13 11:55:18
   from 'C:\xampp\htdocs\Writer\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613b80773879d3_80033649',
+  'unifunc' => 'content_613f20063397c5_57774217',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39ac229ccf7e255e9ae58fd68eb5caa1fa198096' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\footer.tpl',
-      1 => 1631289462,
+      1 => 1631526917,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613b80773879d3_80033649 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f20063397c5_57774217 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
     <div class="footer-top-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-8" style="margin-left: 150px">
                     <div class="footer-left">
-                        <a href="index.tpl">
-                            <img src="img/logo-2.png" alt="">
+                        <a href="index.php">
+                            <img src="./templates/img/logo-2.png" alt="">
                         </a>
                         <p>WRITER BOOK<br> ONLINE STORE.</p><br>
                         <ul class="footer-contact">

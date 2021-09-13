@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-12 18:05:14
+/* Smarty version 3.1.39, created on 2021-09-13 12:17:42
   from 'C:\xampp\htdocs\Writer\templates\header-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613e253ac0a326_20543546',
+  'unifunc' => 'content_613f25469c3eb9_83930536',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '94b6465d2c507fcd5484ba139e5ce89f8af37be4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header-admin.tpl',
-      1 => 1631462714,
+      1 => 1631528261,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613e253ac0a326_20543546 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f25469c3eb9_83930536 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="it">
 <head>
@@ -134,8 +134,8 @@ function content_613e253ac0a326_20543546 (Smarty_Internal_Template $_smarty_tpl)
                         </ul>
                     </div>
                 </li>
-                <form id="form" action="Logout.php" method="get">
-                    <a href="" class="nav-link"  onclick="document.getElementById('form').submit()">
+                <form id="form" action="Logout.php" method="post">
+                    <a href="#" class="nav-link"  onclick="document.getElementById('form').submit()">
                     <i class="icon-arrow-right menu-icon"></i>
                         <span class="menu-title">Logout</span>
                     </a>

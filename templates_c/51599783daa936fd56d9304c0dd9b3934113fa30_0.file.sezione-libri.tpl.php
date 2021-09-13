@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-12 19:30:01
+/* Smarty version 3.1.39, created on 2021-09-13 09:20:48
   from 'C:\xampp\htdocs\Writer\templates\sezione-libri.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613e391956d286_64733941',
+  'unifunc' => 'content_613efbd02c1ef4_32574528',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51599783daa936fd56d9304c0dd9b3934113fa30' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\sezione-libri.tpl',
-      1 => 1631467799,
+      1 => 1631517589,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_613e391956d286_64733941 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613efbd02c1ef4_32574528 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -110,6 +110,9 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                                     <th>
                                         ISBN
                                     </th>
+                                    <th>
+                                        Modifica
+                                    </th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -145,6 +148,12 @@ $_smarty_tpl->tpl_vars['book']->do_else = false;
                                             <td>
                                                 <?php echo $_smarty_tpl->tpl_vars['book']->value['isbn'];?>
 
+                                            </td>
+                                            <td>
+                                                <a href="modify.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
+" class="btn btn-primary">
+                                                    Elimina
+                                                </a>
                                             </td>
                                         </tr>
                                     <?php

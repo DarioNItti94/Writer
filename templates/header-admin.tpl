@@ -86,8 +86,8 @@
                         </ul>
                     </div>
                 </li>
-                <form id="form" action="Logout.php" method="get">
-                    <a href="" class="nav-link"  onclick="document.getElementById('form').submit()">
+                <form id="form" action="Logout.php" method="post">
+                    <a href="#" class="nav-link"  onclick="document.getElementById('form').submit()">
                     <i class="icon-arrow-right menu-icon"></i>
                         <span class="menu-title">Logout</span>
                     </a>

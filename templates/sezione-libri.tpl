@@ -85,6 +85,9 @@
                                     <th>
                                         ISBN
                                     </th>
+                                    <th>
+                                        Modifica
+                                    </th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -108,6 +111,11 @@
                                             </td>
                                             <td>
                                                 {$book.isbn}
+                                            </td>
+                                            <td>
+                                                <a href="modify.php?id={$book.id}" class="btn btn-primary">
+                                                    Elimina
+                                                </a>
                                             </td>
                                         </tr>
                                     {/foreach}

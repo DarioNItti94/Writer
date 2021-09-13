@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-12 16:04:34
+/* Smarty version 3.1.39, created on 2021-09-13 10:44:27
   from 'C:\xampp\htdocs\Writer\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613e08f272e3d6_10908497',
+  'unifunc' => 'content_613f0f6b959de5_06807709',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eae34e73321ecbc42b088318a870d75ab77c771' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header.tpl',
-      1 => 1631455473,
+      1 => 1631522609,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613e08f272e3d6_10908497 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f0f6b959de5_06807709 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html class="no-js" lang="it">
 <head>
@@ -107,7 +107,7 @@ function content_613e08f272e3d6_10908497 (Smarty_Internal_Template $_smarty_tpl)
                             <div class="add-to-cart-product">
                                 <div class="cart-product">
                                     <div class="cart-product-image">
-                                        <a href="single-product.html">
+                                        <a href="Product-item.tpl">
                                             <img src="./templates/img/shop/1.jpg" alt="">
                                         </a>
                                     </div>
@@ -115,9 +115,9 @@ function content_613e08f272e3d6_10908497 (Smarty_Internal_Template $_smarty_tpl)
                                         <p>
                                             <span>1</span>
                                             x
-                                            <a href="single-product.html">East of eden</a>
+                                            <a href="Product-item.tpl">East of eden</a>
                                         </p>
-                                        <a href="single-product.html">S, Orange</a>
+                                        <a href="Product-item.tpl">S, Orange</a>
                                         <span class="cart-price">$ 140.00</span>
                                     </div>
                                     <div class="cart-product-remove">
@@ -126,7 +126,7 @@ function content_613e08f272e3d6_10908497 (Smarty_Internal_Template $_smarty_tpl)
                                 </div>
                                 <div class="cart-product">
                                     <div class="cart-product-image">
-                                        <a href="single-product.html">
+                                        <a href="Product-item.tpl">
                                             <img src="./templates/img/shop/1.jpg" alt="">
                                         </a>
                                     </div>
@@ -134,9 +134,9 @@ function content_613e08f272e3d6_10908497 (Smarty_Internal_Template $_smarty_tpl)
                                         <p>
                                             <span>1</span>
                                             x
-                                            <a href="single-product.html">East of eden</a>
+                                            <a href="Product-item.tpl">East of eden</a>
                                         </p>
-                                        <a href="single-product.html">S, Orange</a>
+                                        <a href="Product-item.tpl">S, Orange</a>
                                         <span class="cart-price">$ 140.00</span>
                                     </div>
                                     <div class="cart-product-remove">
