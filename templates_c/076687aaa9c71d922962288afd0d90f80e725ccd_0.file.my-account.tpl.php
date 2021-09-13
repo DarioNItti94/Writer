@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-10 18:15:07
+/* Smarty version 3.1.39, created on 2021-09-13 18:41:35
   from 'C:\xampp\htdocs\Writer\templates\my-account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613b848b7e7078_33500329',
+  'unifunc' => 'content_613f7f3f605d75_04323286',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '076687aaa9c71d922962288afd0d90f80e725ccd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\my-account.tpl',
-      1 => 1631288721,
+      1 => 1631551234,
       2 => 'file',
     ),
   ),
@@ -22,36 +22,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613b848b7e7078_33500329 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f7f3f605d75_04323286 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Il tuo profilo'), 0, false);
 ?>
 
-<div class="mobile-menu-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mobile-menu">
-                    <nav id="dropdown">
-                        <ul>
-                            <li><a href="index.tpl">HOME</a></li>
-                            <li><a href="shop.html">FEATURED</a></li>
-                            <li><a href="shop.html">REVIEW BOOK</a></li>
-                            <li><a href="about.html">ABOUT AUTHOR</a></li>
-                            <li><a href="#">pages</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.tpl">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Breadcrumbs Area Start -->
 <!-- My Account Area Start -->
 <div class="my-account-area section-padding">
@@ -153,7 +128,7 @@ $_smarty_tpl->tpl_vars['addr']->do_else = false;
                                                         <div class="order card">
                                                             <div class="card-body">
                                                                 <div class="row">
-                                                                    <div class="col-6 col-md-4">
+                                                                    <div class="col-6 col-md-5">
                                                                         <h4><?php echo $_smarty_tpl->tpl_vars['addr']->value['street'];?>
 </h4>
                                                                     </div>

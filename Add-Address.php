@@ -7,7 +7,7 @@ $utente = $_POST["utente"];
 $info = $_POST["info"];
 $via = $_POST["via"];
 $citta = $_POST["citta"];
-$prov = $_POST["provincia"];
+$prov = $_POST["prov"];
 $cap = $_POST["cap"];
 $stato = $_POST["stato"];
 

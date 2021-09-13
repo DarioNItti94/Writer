@@ -31,9 +31,9 @@
                         <ul class="footer-list">
                             <li><a href="profile.php">Account</a></li>
                             <li><a href="account.html">Login</a></li>
-                            <li><a href="cart.html">Carrello</a></li>
+                            <li><a href="Cart.tpl">Carrello</a></li>
                             <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="Checkout.tpl">Checkout</a></li>
                         </ul>
                     </div>
                 </div>

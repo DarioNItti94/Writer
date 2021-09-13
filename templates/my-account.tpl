@@ -1,31 +1,6 @@
 {include file="header.tpl" title='Il tuo profilo'}
 
-<div class="mobile-menu-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mobile-menu">
-                    <nav id="dropdown">
-                        <ul>
-                            <li><a href="index.tpl">HOME</a></li>
-                            <li><a href="shop.html">FEATURED</a></li>
-                            <li><a href="shop.html">REVIEW BOOK</a></li>
-                            <li><a href="about.html">ABOUT AUTHOR</a></li>
-                            <li><a href="#">pages</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.tpl">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Breadcrumbs Area Start -->
 <!-- My Account Area Start -->
 <div class="my-account-area section-padding">
@@ -110,7 +85,7 @@
                                                         <div class="order card">
                                                             <div class="card-body">
                                                                 <div class="row">
-                                                                    <div class="col-6 col-md-4">
+                                                                    <div class="col-6 col-md-5">
                                                                         <h4>{$addr.street}</h4>
                                                                     </div>
 

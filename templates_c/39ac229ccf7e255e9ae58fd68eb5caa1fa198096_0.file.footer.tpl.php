@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 11:55:18
+/* Smarty version 3.1.39, created on 2021-09-13 17:36:06
   from 'C:\xampp\htdocs\Writer\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f20063397c5_57774217',
+  'unifunc' => 'content_613f6fe6e42ba1_85713800',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39ac229ccf7e255e9ae58fd68eb5caa1fa198096' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\footer.tpl',
-      1 => 1631526917,
+      1 => 1631547299,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613f20063397c5_57774217 (Smarty_Internal_Template $_smarty_tpl) {
+function content_613f6fe6e42ba1_85713800 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
     <div class="footer-top-area">
         <div class="container">
@@ -54,9 +54,9 @@ function content_613f20063397c5_57774217 (Smarty_Internal_Template $_smarty_tpl)
                         <ul class="footer-list">
                             <li><a href="profile.php">Account</a></li>
                             <li><a href="account.html">Login</a></li>
-                            <li><a href="cart.html">Carrello</a></li>
+                            <li><a href="Cart.tpl">Carrello</a></li>
                             <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="Checkout.tpl">Checkout</a></li>
                         </ul>
                     </div>
                 </div>

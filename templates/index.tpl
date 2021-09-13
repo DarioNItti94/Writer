@@ -16,8 +16,8 @@
                             <li><a href="#">pages</a>
                                 <ul>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
+                                    <li><a href="Cart.tpl">Cart Page</a></li>
+                                    <li><a href="Checkout.tpl">Check Out</a></li>
                                 </ul>
                             </li>
                             <li><a href="contact.tpl">CONTACT</a></li>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-10 17:51:45
+/* Smarty version 3.1.39, created on 2021-09-13 18:22:53
   from 'C:\xampp\htdocs\Writer\templates\contact.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613b7f11cdd643_46958238',
+  'unifunc' => 'content_613f7add1ccb09_72043936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4868d76bb36bcc2266a3c4edfd17b143f517ab1b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\contact.tpl',
-      1 => 1631289104,
+      1 => 1631550073,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613b7f11cdd643_46958238 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Accedi'), 0, false);
+function content_613f7add1ccb09_72043936 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Contatti'), 0, false);
 ?>
 
 <!-- Mobile Menu End -->

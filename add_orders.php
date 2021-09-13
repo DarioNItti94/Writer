@@ -22,7 +22,7 @@ $id_cart = intval($row->id);
 $del_cart = "DELETE FROM shopping_cart_item WHERE shopping_cart_id=" . $id_cart;
 $con->query($del_cart);
 
-$sql_email = "SELECT email FROM customer WHERE customer.id=" . $id_logged;
+$sql_email = "SELECT email FROM user WHERE user.id=" . $id_logged;
 $email_res = mysqli_query($con, $sql_email);
 $row = mysqli_fetch_object($email_res);
 $email = $row->email;
