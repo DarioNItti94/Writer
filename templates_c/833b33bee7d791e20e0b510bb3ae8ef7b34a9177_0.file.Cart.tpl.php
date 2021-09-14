@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 17:31:30
+/* Smarty version 3.1.39, created on 2021-09-14 16:28:01
   from 'C:\xampp\htdocs\Writer\templates\Cart.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6ed29bb4f8_13298532',
+  'unifunc' => 'content_6140b1715269f7_85066370',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '833b33bee7d791e20e0b510bb3ae8ef7b34a9177' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\Cart.tpl',
-      1 => 1631547089,
+      1 => 1631629538,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613f6ed29bb4f8_13298532 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6140b1715269f7_85066370 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\Writer\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Il tuo profilo'), 0, false);
 ?>
@@ -53,14 +53,13 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['cart']->value) {
 $_smarty_tpl->tpl_vars['cart']->do_else = false;
 ?>
                                 <tr>
-                                    <form id="del_form" action="del_cart.php" method="post">
                                         <td class="product-remove">
                                             <input type="hidden" name="id_book_cart" value="<?php echo $_smarty_tpl->tpl_vars['cart']->value['book_id'];?>
 ">
-                                            <a href="#" onclick="document.getElementById('del_form').submit()">
+                                            <a href="#" onclick="location.href='del_cart.php?id=<?php echo $_smarty_tpl->tpl_vars['cart']->value['id'];?>
+'" >
                                                 <i class="flaticon-delete"></i>
                                             </a>
-                                    </form>
                                     </td>
                                     <td class="product-image">
                                         <img src="<?php echo $_smarty_tpl->tpl_vars['cart']->value['pic'];?>

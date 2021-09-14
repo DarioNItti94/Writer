@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Aggiungi un libro</h4>
-                        <form  enctype="multipart/form-data" action="insert_book.php" method="post">
+                        <form enctype="multipart/form-data" action="insert_book.php" method="post">
                             <div class="form-group">
                                 <label for="exampleInputUsername1">ISBN</label>
                                 <input class="form-control" type="text" id="isbn" name="isbn">
@@ -36,8 +36,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Quantità</label>
-                                <input class="form-control" type="number" id="quantita" name="quantita" min="0"
-                                       max="20">
+                                <input class="form-control" type="number" id="quantita" name="quantita" min="1"
+                                       max="100">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Prezzo</label>
@@ -52,8 +52,8 @@
                                 <label for="exampleInputEmail1">Autore</label>
                                 <input type="text" class="form-control" id="autore" name="autore">
                             </div>
-                                <input type="file" name="image">
-                                <br><br>
+                            <input type="file" name="image">
+                            <br><br>
                             <input type="submit" name="submit" class="btn btn-primary mr-2" value="Aggiungi">
                         </form>
                     </div>
@@ -136,7 +136,7 @@
     <!-- partial -->
 </div>
 <!-- main-panel ends -->
-</div>
+
 <!-- page-body-wrapper ends -->
 
 <!-- container-scroller -->

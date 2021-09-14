@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 18:41:35
+/* Smarty version 3.1.39, created on 2021-09-14 18:10:33
   from 'C:\xampp\htdocs\Writer\templates\my-account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f7f3f605d75_04323286',
+  'unifunc' => 'content_6140c979941799_70773090',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '076687aaa9c71d922962288afd0d90f80e725ccd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\my-account.tpl',
-      1 => 1631551234,
+      1 => 1631635823,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613f7f3f605d75_04323286 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6140c979941799_70773090 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Il tuo profilo'), 0, false);
 ?>
 
@@ -74,18 +74,27 @@ $_smarty_tpl->tpl_vars['order']->do_else = false;
                                                                     <div class="row">
                                                                         <div class="col-6 col-md-4">
                                                                             <img src="<?php echo $_smarty_tpl->tpl_vars['order']->value['pic'];?>
-" alt="Order" width="150" height="170" style="float: left;">
+" alt="Order"
+                                                                                 width="50" height="100"
+                                                                                 style="float: left;">
                                                                         </div>
                                                                         <div class="col-12 col-md-8 option">
-                                                                            <h3 class="card-title" style="margin-bottom: -10px"><?php echo $_smarty_tpl->tpl_vars['order']->value['title'];?>
-</h3>
-                                                                            <br><br>
-                                                                            <p>Stato: <?php echo $_smarty_tpl->tpl_vars['order']->value['status'];?>
-</p>
-                                                                            <h3 class="card-text" id="price"><?php echo $_smarty_tpl->tpl_vars['order']->value['subtotal'];?>
+                                                                            <h5 class="card-title"
+                                                                                style="margin-bottom: -10px"><?php echo $_smarty_tpl->tpl_vars['order']->value['title'];?>
+</h5>
+                                                                            <br>
+                                                                            <p1>Qt: <?php echo $_smarty_tpl->tpl_vars['order']->value['quantity'];?>
+</p1>
+                                                                            <br>
+                                                                            <p1>Stato: <?php echo $_smarty_tpl->tpl_vars['order']->value['status'];?>
+</p1>
+                                                                            <h3 class="card-text"
+                                                                                id="price"><?php echo $_smarty_tpl->tpl_vars['order']->value['subtotal'];?>
 €</h3>
                                                                         </div>
+
                                                                     </div>
+                                                                    <hr>
                                                                 </div>
                                                             </div>
                                                         <?php
@@ -95,7 +104,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                         <div></div>
                                                     <?php }?>
                                                 </section>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -135,9 +144,11 @@ $_smarty_tpl->tpl_vars['addr']->do_else = false;
 
                                                                     <div class="col-12 col-md-8 option">
                                                                         <form method="post" action="del_addr.php">
-                                                                            <input type="hidden" name="id_addr" value="<?php echo $_smarty_tpl->tpl_vars['addr']->value['id'];?>
+                                                                            <input type="hidden" name="id_addr"
+                                                                                   value="<?php echo $_smarty_tpl->tpl_vars['addr']->value['id'];?>
 ">
-                                                                            <input class="btn-input btn" type="submit" value="Elimina Indirizzo">
+                                                                            <input class="btn-input btn" type="submit"
+                                                                                   value="Elimina Indirizzo">
                                                                         </form>
                                                                     </div>
 
@@ -203,7 +214,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                             <p class="form-row order-notes">
                                                 <textarea placeholder="Additional information"></textarea>
                                             </p>
-                                            <input type="submit" class="btn button button-small" value="Salva" >
+                                            <input type="submit" class="btn button button-small" value="Salva">
                                         </form>
                                     </div>
                                 </div>
@@ -231,21 +242,48 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                         <p class="coupon-text">Ecco i tuoi libri preferiti</p>
                                         <div class="order-history">
                                             <div class="alert">
-                                                <?php if ((!empty($_smarty_tpl->tpl_vars['books']->value))) {?>
-                                                <?php
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Immagine</th>
+                                                            <th>Titolo</th>
+                                                            <th>Prezzo</th>
+                                                            <th>Gestisci</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <?php if ((!empty($_smarty_tpl->tpl_vars['books']->value))) {?>
+                                                            <tbody>
+                                                            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['books']->value, 'book');
 $_smarty_tpl->tpl_vars['book']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['book']->value) {
 $_smarty_tpl->tpl_vars['book']->do_else = false;
 ?>
-
-                                                <?php
+                                                                <tr>
+                                                                    <td><a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['book_id'];?>
+">
+                                                                            <img src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
+" alt="product-catalog"
+                                                                                 style="width:100px ;height: 120px;border-radius: 100%"></a></td>
+                                                                    <td class="font-weight-bold"><?php echo $_smarty_tpl->tpl_vars['book']->value['title'];?>
+</td>
+                                                                    <td><?php echo $_smarty_tpl->tpl_vars['book']->value['price'];?>
+ €</td>
+                                                                    <td><a onclick="location.href='del_wish.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['book_id'];?>
+'"
+                                                                            type="submit" class="badge badge-success">Elimina</a></td>
+                                                                </tr>
+                                                            <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                                                <?php } else { ?>
+                                                            </tbody>
+                                                        <?php } else { ?>
+                                                            <div></div>
+                                                        <?php }?>
+                                                    </table>
+                                                </div>
                                             </div>
-                                            <?php }?>
-
                                         </div>
                                     </div>
                                 </div>
@@ -254,22 +292,22 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="create-account-button pull-left">
-                        <form action="Logout.php" method="post">
-                            <input href="index.php" class="btn button button-large" value="Logout" type="submit">
-                        </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="create-account-button pull-left">
+                    <form action="Logout.php" method="post">
+                        <input href="index.php" class="btn button button-large" value="Logout" type="submit">
+                    </form>
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- My Account Area End -->
-    <!-- Footer Area Start -->
-    <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+</div>
+<!-- My Account Area End -->
+<!-- Footer Area Start -->
+<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <?php }

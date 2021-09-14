@@ -9,4 +9,4 @@ while ($resrow = mysqli_fetch_array($res)) {
     $data[]=$resrow;
     $smarty->assign("books",$data);
 }
-$smarty->display("orders-det.tpl");
+$smarty->display("order-details.tpl");

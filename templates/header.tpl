@@ -71,12 +71,7 @@
                     <nav>
                         <ul id="nav" style="margin-left: 450px;">
                             <li><h4><a href="index.php">HOME</a></h4></li>
-                            <li><h4><a href="#">Categorie</a></h4>
-                                <ul class="sub-menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="Cart.tpl">Cart Page</a></li>
-                                    <li><a href="Checkout.tpl">Check Out</a></li>
-                                </ul>
+                            <li><h4><a href="Products.php">Prodotti</a></h4>
                             </li>
                             <li><h4><a href="Contact.php">CONTATTI</a></h4></li>
                         </ul>

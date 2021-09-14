@@ -5,7 +5,8 @@ checkSessione();
 
 $id_logged = $_SESSION["id"];
 //prendo l'id del utente loggato
-$sql_shopping_cart = "SELECT * FROM book INNER JOIN shopping_cart_item as S_I ON book.id=S_I.book_id INNER JOIN shopping_cart AS S_C ON S_C.customer_id=".$id_logged;
+$sql_shopping_cart = "SELECT S_I.id,book.pic,book.title,book.price,S_I.item_quantity,book.quantity,S_I.book_id,S_I.subtotal
+FROM book INNER JOIN shopping_cart_item as S_I ON book.id=S_I.book_id INNER JOIN shopping_cart AS S_C ON S_C.customer_id=".$id_logged;
 //faccio il join con le due tabelle
 $res = mysqli_query($con, $sql_shopping_cart);
 //eseguo la query sul db

@@ -2,10 +2,8 @@
 include "lib.inc.php";
 
 $smarty = includesmarty();
-$category_id = $_GET["id_category"];
-$smarty->assign("categoria", 'Avventura');
-$avventura = "SELECT  book.id,book.title,book.price,category.name ,book.pic FROM book INNER JOIN book_category ON book.id=book_category.book_id INNER JOIN category ON category.id=book_category.category_id WHERE book_category.category_id=".$category_id;
-$result = mysqli_query($con, $avventura);
+$all = "SELECT * FROM book";
+$result = mysqli_query($con, $all);
 $book=array();
 while ($book = mysqli_fetch_array($result)) {
     $books[] = $book;
@@ -13,6 +11,13 @@ while ($book = mysqli_fetch_array($result)) {
 
 }
 
+$cat="SELECT * FROM `category`";
+$res=mysqli_query($con, $cat);
+$category=array();
+while ($category = mysqli_fetch_array($res)) {
+    $categories[] = $category;
+    $smarty->assign("categories",$categories);
+}
 
 
-$smarty->display("Products.tpl");
+$smarty->display("products.tpl");

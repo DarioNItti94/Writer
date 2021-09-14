@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 17:36:06
+/* Smarty version 3.1.39, created on 2021-09-14 18:22:31
   from 'C:\xampp\htdocs\Writer\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6fe6e0fcf9_34245765',
+  'unifunc' => 'content_6140cc4771a435_35595729',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eae34e73321ecbc42b088318a870d75ab77c771' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header.tpl',
-      1 => 1631547299,
+      1 => 1631636550,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613f6fe6e0fcf9_34245765 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6140cc4771a435_35595729 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html class="no-js" lang="it">
 <head>
@@ -101,12 +101,7 @@ function content_613f6fe6e0fcf9_34245765 (Smarty_Internal_Template $_smarty_tpl)
                     <nav>
                         <ul id="nav" style="margin-left: 450px;">
                             <li><h4><a href="index.php">HOME</a></h4></li>
-                            <li><h4><a href="#">Categorie</a></h4>
-                                <ul class="sub-menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="Cart.tpl">Cart Page</a></li>
-                                    <li><a href="Checkout.tpl">Check Out</a></li>
-                                </ul>
+                            <li><h4><a href="Products.php">Prodotti</a></h4>
                             </li>
                             <li><h4><a href="Contact.php">CONTATTI</a></h4></li>
                         </ul>

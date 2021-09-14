@@ -43,7 +43,7 @@ if ($num == 1 AND $role==2) {
         $_SESSION['logged_in'] = true;
         session_regenerate_id();
         $_SESSION['id'] = session_id();
-        $_SESSION['admin'] = $email;
+        $_SESSION['user'] = $email;
         header('location:Dashboard.php');
     } else {
         $smarty->display("Error.php");

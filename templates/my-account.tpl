@@ -41,15 +41,23 @@
                                                                 <div class="card-body">
                                                                     <div class="row">
                                                                         <div class="col-6 col-md-4">
-                                                                            <img src="{$order.pic}" alt="Order" width="150" height="170" style="float: left;">
+                                                                            <img src="{$order.pic}" alt="Order"
+                                                                                 width="50" height="100"
+                                                                                 style="float: left;">
                                                                         </div>
                                                                         <div class="col-12 col-md-8 option">
-                                                                            <h3 class="card-title" style="margin-bottom: -10px">{$order.title}</h3>
-                                                                            <br><br>
-                                                                            <p>Stato: {$order.status}</p>
-                                                                            <h3 class="card-text" id="price">{$order.subtotal}€</h3>
+                                                                            <h5 class="card-title"
+                                                                                style="margin-bottom: -10px">{$order.title}</h5>
+                                                                            <br>
+                                                                            <p1>Qt: {$order.quantity}</p1>
+                                                                            <br>
+                                                                            <p1>Stato: {$order.status}</p1>
+                                                                            <h3 class="card-text"
+                                                                                id="price">{$order.subtotal}€</h3>
                                                                         </div>
+
                                                                     </div>
+                                                                    <hr>
                                                                 </div>
                                                             </div>
                                                         {/foreach}
@@ -57,7 +65,7 @@
                                                         <div></div>
                                                     {/if}
                                                 </section>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -91,8 +99,10 @@
 
                                                                     <div class="col-12 col-md-8 option">
                                                                         <form method="post" action="del_addr.php">
-                                                                            <input type="hidden" name="id_addr" value="{$addr.id}">
-                                                                            <input class="btn-input btn" type="submit" value="Elimina Indirizzo">
+                                                                            <input type="hidden" name="id_addr"
+                                                                                   value="{$addr.id}">
+                                                                            <input class="btn-input btn" type="submit"
+                                                                                   value="Elimina Indirizzo">
                                                                         </form>
                                                                     </div>
 
@@ -156,7 +166,7 @@
                                             <p class="form-row order-notes">
                                                 <textarea placeholder="Additional information"></textarea>
                                             </p>
-                                            <input type="submit" class="btn button button-small" value="Salva" >
+                                            <input type="submit" class="btn button button-small" value="Salva">
                                         </form>
                                     </div>
                                 </div>
@@ -184,14 +194,36 @@
                                         <p class="coupon-text">Ecco i tuoi libri preferiti</p>
                                         <div class="order-history">
                                             <div class="alert">
-                                                {if (!empty($books))}
-                                                {foreach from=$books item="book"}
-
-                                                {/foreach}
-                                                {else}
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Immagine</th>
+                                                            <th>Titolo</th>
+                                                            <th>Prezzo</th>
+                                                            <th>Gestisci</th>
+                                                        </tr>
+                                                        </thead>
+                                                        {if (!empty($books))}
+                                                            <tbody>
+                                                            {foreach from=$books item="book"}
+                                                                <tr>
+                                                                    <td><a href="Product-item.php?id={$book.book_id}">
+                                                                            <img src="{$book.pic}" alt="product-catalog"
+                                                                                 style="width:100px ;height: 120px;border-radius: 100%"></a></td>
+                                                                    <td class="font-weight-bold">{$book.title}</td>
+                                                                    <td>{$book.price} €</td>
+                                                                    <td><a onclick="location.href='del_wish.php?id={$book.book_id}'"
+                                                                            type="submit" class="badge badge-success">Elimina</a></td>
+                                                                </tr>
+                                                            {/foreach}
+                                                            </tbody>
+                                                        {else}
+                                                            <div></div>
+                                                        {/if}
+                                                    </table>
+                                                </div>
                                             </div>
-                                            {/if}
-
                                         </div>
                                     </div>
                                 </div>
@@ -200,20 +232,20 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="create-account-button pull-left">
-                        <form action="Logout.php" method="post">
-                            <input href="index.php" class="btn button button-large" value="Logout" type="submit">
-                        </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="create-account-button pull-left">
+                    <form action="Logout.php" method="post">
+                        <input href="index.php" class="btn button button-large" value="Logout" type="submit">
+                    </form>
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- My Account Area End -->
-    <!-- Footer Area Start -->
-    {include file="footer.tpl"}
+</div>
+<!-- My Account Area End -->
+<!-- Footer Area Start -->
+{include file="footer.tpl"}
 

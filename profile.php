@@ -40,7 +40,7 @@ while ($address = mysqli_fetch_array($result)) {
  * orders sections
  */
 $id_logged = $_SESSION["id"];
-$sql_order="SELECT * FROM book INNER JOIN order_item ON book.id=order_item.book_id INNER JOIN `order` ON `order`.`customer_id`=".$id_logged;
+$sql_order="SELECT * FROM book INNER JOIN order_item ON book.id=order_item.book_id RIGHT JOIN `order` ON `order`.`id`=order_item.order_id WHERE `order`.`customer_id`=".$id_logged;
 $res= mysqli_query($con,$sql_order);
 $resrow=array();
 while ($resrow = mysqli_fetch_array($res)) {

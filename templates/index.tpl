@@ -10,8 +10,8 @@
                     <nav id="dropdown">
                         <ul>
                             <li><a href="index.tpl">HOME</a></li>
-                            <li><a href="shop.html">FEATURED</a></li>
-                            <li><a href="shop.html">REVIEW BOOK</a></li>
+                            <li><a href="products.tpl">FEATURED</a></li>
+                            <li><a href="products.tpl">REVIEW BOOK</a></li>
                             <li><a href="about.html">ABOUT AUTHOR</a></li>
                             <li><a href="#">pages</a>
                                 <ul>

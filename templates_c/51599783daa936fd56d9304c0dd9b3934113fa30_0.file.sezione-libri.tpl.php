@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 09:20:48
+/* Smarty version 3.1.39, created on 2021-09-14 16:52:20
   from 'C:\xampp\htdocs\Writer\templates\sezione-libri.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613efbd02c1ef4_32574528',
+  'unifunc' => 'content_6140b724e0b476_51110405',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51599783daa936fd56d9304c0dd9b3934113fa30' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\sezione-libri.tpl',
-      1 => 1631517589,
+      1 => 1631628330,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_613efbd02c1ef4_32574528 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6140b724e0b476_51110405 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -37,7 +37,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Aggiungi un libro</h4>
-                        <form  enctype="multipart/form-data" action="insert_book.php" method="post">
+                        <form enctype="multipart/form-data" action="insert_book.php" method="post">
                             <div class="form-group">
                                 <label for="exampleInputUsername1">ISBN</label>
                                 <input class="form-control" type="text" id="isbn" name="isbn">
@@ -61,8 +61,8 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Quantità</label>
-                                <input class="form-control" type="number" id="quantita" name="quantita" min="0"
-                                       max="20">
+                                <input class="form-control" type="number" id="quantita" name="quantita" min="1"
+                                       max="100">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Prezzo</label>
@@ -77,8 +77,8 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                                 <label for="exampleInputEmail1">Autore</label>
                                 <input type="text" class="form-control" id="autore" name="autore">
                             </div>
-                                <input type="file" name="image">
-                                <br><br>
+                            <input type="file" name="image">
+                            <br><br>
                             <input type="submit" name="submit" class="btn btn-primary mr-2" value="Aggiungi">
                         </form>
                     </div>
@@ -176,7 +176,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <!-- partial -->
 </div>
 <!-- main-panel ends -->
-</div>
+
 <!-- page-body-wrapper ends -->
 
 <!-- container-scroller -->

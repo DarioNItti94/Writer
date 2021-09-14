@@ -21,13 +21,11 @@
                         {if !empty($carts)}
                             {foreach from=$carts item=cart }
                                 <tr>
-                                    <form id="del_form" action="del_cart.php" method="post">
                                         <td class="product-remove">
                                             <input type="hidden" name="id_book_cart" value="{$cart.book_id}">
-                                            <a href="#" onclick="document.getElementById('del_form').submit()">
+                                            <a href="#" onclick="location.href='del_cart.php?id={$cart.id}'" >
                                                 <i class="flaticon-delete"></i>
                                             </a>
-                                    </form>
                                     </td>
                                     <td class="product-image">
                                         <img src="{$cart.pic}" alt="image" width="100" height="100">

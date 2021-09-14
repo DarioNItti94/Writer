@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 12:17:42
+/* Smarty version 3.1.39, created on 2021-09-14 11:14:40
   from 'C:\xampp\htdocs\Writer\templates\header-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f25469c3eb9_83930536',
+  'unifunc' => 'content_61406800115a71_13968997',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '94b6465d2c507fcd5484ba139e5ce89f8af37be4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header-admin.tpl',
-      1 => 1631528261,
+      1 => 1631610879,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613f25469c3eb9_83930536 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61406800115a71_13968997 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="it">
 <head>
@@ -103,8 +103,8 @@ function content_613f25469c3eb9_83930536 (Smarty_Internal_Template $_smarty_tpl)
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo mr-5"><img src="./templates/img/logo.png" class="mr-2" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo mr-5" href="index.php"><img src="./templates/img/logo.png" class="mr-2" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.php"><img src="images/logo-mini.svg" alt="logo"/></a>
 
     </nav>
 
