@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-14 18:22:20
+/* Smarty version 3.1.39, created on 2021-09-15 17:30:42
   from 'C:\xampp\htdocs\Writer\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6140cc3c4ec7d6_06681817',
+  'unifunc' => 'content_614211a252cef4_52936024',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '74c9233726b37e36cd20fd70397755b78fa08394' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\index.tpl',
-      1 => 1631636142,
+      1 => 1631719841,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6140cc3c4ec7d6_06681817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614211a252cef4_52936024 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Home'), 0, false);
 ?>
 
@@ -107,13 +107,12 @@ $_smarty_tpl->tpl_vars['book']->do_else = false;
 ?>
                                     <div class="col-sm-3">
                                         <div class="thumb-wrapper">
-
                                             <div class="img-box">
                                                 <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
 ">
-                                                <img src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
+                                                    <img src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
 " class="img-responsive"
-                                                     alt="">
+                                                         alt="">
                                             </div>
                                             <div class="thumb-content">
                                                 <h4><?php echo $_smarty_tpl->tpl_vars['book']->value['title'];?>
@@ -124,8 +123,7 @@ $_smarty_tpl->tpl_vars['book']->do_else = false;
 €</b></p>
                                             </div>
                                         </div>
-                                    </a>
-
+                                        </a>
                                     </div>
                                 <?php
 }
@@ -211,14 +209,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <div class="row">
             <div class="col-md-12">
                 <div class="newsletter-title">
-                    <h2>SUBSCRIBE OUR NEWSLETTER</h2>
-                    <p>Subscribe here with your email us and get up to date.</p>
+                    <h2>ISCRIVITI ALLA NEWSLETTER</h2>
+                    <p>Iscriviti qui con la tua email e tieniti aggiornato</p>
                 </div>
                 <div class="letter-box">
-                    <form action="#" method="post" class="search-box">
+                    <form action="newsletter.php" method="post" class="search-box">
                         <div>
-                            <input type="text" placeholder="Subscribe us">
-                            <button type="submit" class="btn btn-search">SUBSCRIBE<span><i
+                            <input type="email" name="newsletter" placeholder="Inserisci la tua email">
+                            <button type="submit" class="btn btn-search">ISCRIVITI<span><i
                                             class="flaticon-school-1"></i></span></button>
                         </div>
                     </form>

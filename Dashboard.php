@@ -39,6 +39,14 @@ while ($resrow = mysqli_fetch_array($res)) {
  * assign to smarty
  */
 
+$newsletter="SELECT * FROM `book_review` INNER JOIN user ON book_review.customer_id=user.id INNER JOIN book ON book_review.book_id=book.id";
+$news_res=mysqli_query($con, $newsletter);
+$news=array();
+while ($news = mysqli_fetch_array($news_res)) {
+    $newses[]=$news;
+    $smarty->assign("reviews",$newses);
+}
+
 $smarty->assign("read", $num);
 $smarty->assign("user",$user);
 $smarty->assign("order_num",$order_num);

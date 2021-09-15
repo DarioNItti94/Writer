@@ -76,11 +76,10 @@
                                 {foreach from=$books item="book"}
                                     <div class="col-sm-3">
                                         <div class="thumb-wrapper">
-
                                             <div class="img-box">
                                                 <a href="Product-item.php?id={$book.id}">
-                                                <img src="{$book.pic}" class="img-responsive"
-                                                     alt="">
+                                                    <img src="{$book.pic}" class="img-responsive"
+                                                         alt="">
                                             </div>
                                             <div class="thumb-content">
                                                 <h4>{$book.title}</h4>
@@ -89,8 +88,7 @@
                                                 <p class="item-price"><b>{$book.price}€</b></p>
                                             </div>
                                         </div>
-                                    </a>
-
+                                        </a>
                                     </div>
                                 {/foreach}
                             {else}
@@ -171,14 +169,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="newsletter-title">
-                    <h2>SUBSCRIBE OUR NEWSLETTER</h2>
-                    <p>Subscribe here with your email us and get up to date.</p>
+                    <h2>ISCRIVITI ALLA NEWSLETTER</h2>
+                    <p>Iscriviti qui con la tua email e tieniti aggiornato</p>
                 </div>
                 <div class="letter-box">
-                    <form action="#" method="post" class="search-box">
+                    <form action="newsletter.php" method="post" class="search-box">
                         <div>
-                            <input type="text" placeholder="Subscribe us">
-                            <button type="submit" class="btn btn-search">SUBSCRIBE<span><i
+                            <input type="email" name="newsletter" placeholder="Inserisci la tua email">
+                            <button type="submit" class="btn btn-search">ISCRIVITI<span><i
                                             class="flaticon-school-1"></i></span></button>
                         </div>
                     </form>

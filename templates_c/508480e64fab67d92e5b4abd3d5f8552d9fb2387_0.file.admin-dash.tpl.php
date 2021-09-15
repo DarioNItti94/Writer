@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-14 17:04:51
+/* Smarty version 3.1.39, created on 2021-09-15 18:35:07
   from 'C:\xampp\htdocs\Writer\templates\admin-dash.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6140ba1326dfa8_12291965',
+  'unifunc' => 'content_614220bb7480e3_97059498',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '508480e64fab67d92e5b4abd3d5f8552d9fb2387' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\admin-dash.tpl',
-      1 => 1631631465,
+      1 => 1631723697,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_6140ba1326dfa8_12291965 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614220bb7480e3_97059498 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -82,13 +82,49 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
             <div class="col-md-6 grid-margin transparent">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Messaggi</h4>
+                        <h4 class="card-title">Recensioni</h4>
                         <div class="list-wrapper pt-2">
                             <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
                                 <li>
-                                    <label class="form-check-label">
-                                        Nome utente
-                                    </label>
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Libro</th>
+                                            <th>Utente</th>
+                                            <th>Data</th>
+                                            <th>Voto</th>
+                                            <th>Recensione</th>
+                                        </tr>
+                                        </thead>
+                                        <?php if ((!empty($_smarty_tpl->tpl_vars['reviews']->value))) {?>
+                                            <tbody>
+                                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['reviews']->value, 'review');
+$_smarty_tpl->tpl_vars['review']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['review']->value) {
+$_smarty_tpl->tpl_vars['review']->do_else = false;
+?>
+                                                <tr>
+                                                    <td><?php echo $_smarty_tpl->tpl_vars['review']->value['title'];?>
+</td>
+                                                    <td class="font-weight-bold"><?php echo $_smarty_tpl->tpl_vars['review']->value['email'];?>
+</td>
+                                                    <td><?php echo $_smarty_tpl->tpl_vars['review']->value['submission_date'];?>
+</td>
+                                                    <td><?php echo $_smarty_tpl->tpl_vars['order']->value['rating'];?>
+</td>
+                                                    <td><?php echo $_smarty_tpl->tpl_vars['review']->value['body'];?>
+</td>
+                                                </tr>
+                                            <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
+                                            </tbody>
+                                        <?php } else { ?>
+                                            <div></div>
+                                        <?php }?>
+                                    </table>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +134,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
             <div class="col-lg-8 grid-margin transparent">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-title mb-0">Top Products</p>
+                        <p class="card-title mb-0">Ordini</p>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -137,7 +173,7 @@ $_smarty_tpl->tpl_vars['order']->do_else = false;
                                                 <form id="my_form" action="order_mail_shipped.php" method="post">
                                                     <input type="hidden" name="email" value="<?php echo $_smarty_tpl->tpl_vars['order']->value['email'];?>
 ">
-                                                    <a href="#"  onclick="location.href='send_order.php?id=<?php echo $_smarty_tpl->tpl_vars['order']->value['id'];?>
+                                                    <a href="#" onclick="location.href='send_order.php?id=<?php echo $_smarty_tpl->tpl_vars['order']->value['id'];?>
 ' "
                                                        class="badge badge-success">Clicca Per
                                                         Spedire</a>
@@ -160,26 +196,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <!-- partial -->
                 </div>
             </div>
-            <div class="col-lg-4 grid-margin transparent">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Utenti Iscritti alla newsletter</h4>
-                        <div class="list-wrapper pt-2">
-                            <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
-                                <li>
-                                    <label class="form-check-label">
-                                        Nome utente
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- main-panel ends -->
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
+</div>
 
 
 

@@ -66,7 +66,7 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Striped Table</h4>
+                        <h4 class="card-title">Tutti i prodotti</h4>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -99,7 +99,7 @@
                                     {foreach from=$books item="book"}
                                         <tr>
                                             <td>
-                                                <img src="{$book.pic}" width="150" height="170">
+                                                <img src="{$book.pic}" width="50px" height="70px">
                                             </td>
                                             <td>
                                                 {$book.title}

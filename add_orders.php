@@ -30,8 +30,8 @@ $email = $row->email;
 $name = $_POST['name'];
 $body =  "Il tuo ordine e' stato preso in carico";
 
-$subject = "Il tuo ordine di Book's Corner";
-$headers = "Book's Corner";
+$subject = "Il tuo ordine di Writer";
+$headers = "Writer";
 
 if (mail($email, $subject, $body, $headers)) {
     header("Location:Success.php");

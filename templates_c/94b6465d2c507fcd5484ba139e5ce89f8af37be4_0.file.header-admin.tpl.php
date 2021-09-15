@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-14 11:14:40
+/* Smarty version 3.1.39, created on 2021-09-15 18:26:52
   from 'C:\xampp\htdocs\Writer\templates\header-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61406800115a71_13968997',
+  'unifunc' => 'content_61421ecc065f51_69500044',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '94b6465d2c507fcd5484ba139e5ce89f8af37be4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header-admin.tpl',
-      1 => 1631610879,
+      1 => 1631723210,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61406800115a71_13968997 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61421ecc065f51_69500044 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="it">
 <head>
@@ -131,6 +131,18 @@ function content_61406800115a71_13968997 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="collapse" id="form-elements">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"><a class="nav-link" href="All-product.php">Gestisci libri</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#form-elements2" aria-expanded="false" aria-controls="form-elements">
+                        <i class="icon-globe menu-icon"></i>
+                        <span class="menu-title">Sezione Utenti</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="form-elements2">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="admin-user.php">Gestisci Utenti</a></li>
                         </ul>
                     </div>
                 </li>

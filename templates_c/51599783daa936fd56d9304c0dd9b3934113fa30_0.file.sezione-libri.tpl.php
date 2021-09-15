@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:43:36
+/* Smarty version 3.1.39, created on 2021-09-15 19:15:56
   from 'C:\xampp\htdocs\Writer\templates\sezione-libri.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141c048a7b565_65110443',
+  'unifunc' => 'content_61422a4cc6ab05_75429219',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51599783daa936fd56d9304c0dd9b3934113fa30' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\sezione-libri.tpl',
-      1 => 1631698980,
+      1 => 1631723805,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_6141c048a7b565_65110443 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61422a4cc6ab05_75429219 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -91,7 +91,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Striped Table</h4>
+                        <h4 class="card-title">Tutti i prodotti</h4>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -130,7 +130,7 @@ $_smarty_tpl->tpl_vars['book']->do_else = false;
                                         <tr>
                                             <td>
                                                 <img src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
-" width="150" height="170">
+" width="50px" height="70px">
                                             </td>
                                             <td>
                                                 <?php echo $_smarty_tpl->tpl_vars['book']->value['title'];?>

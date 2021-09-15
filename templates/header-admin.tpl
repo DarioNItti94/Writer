@@ -86,6 +86,18 @@
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#form-elements2" aria-expanded="false" aria-controls="form-elements">
+                        <i class="icon-globe menu-icon"></i>
+                        <span class="menu-title">Sezione Utenti</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="form-elements2">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="admin-user.php">Gestisci Utenti</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <form id="form" action="Logout.php" method="post">
                     <a href="#" class="nav-link"  onclick="document.getElementById('form').submit()">
                     <i class="icon-arrow-right menu-icon"></i>
