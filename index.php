@@ -1,7 +1,7 @@
 <?php
 include "lib.inc.php";
 $smarty = includesmarty();
-$book_list = "SELECT * FROM book";
+$book_list = "SELECT * FROM book ORDER BY id DESC LIMIT 4";
 $result = mysqli_query($con,$book_list);
 $num = mysqli_num_rows($result);
 $book=array();

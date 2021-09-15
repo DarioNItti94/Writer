@@ -1,4 +1,4 @@
-{include file="header.tpl" title='Tuttu i Prodotti'}
+{include file="header.tpl" title='Tutti i Prodotti'}
 
 <div class="shopping-area section-padding">
     <div class="container">
@@ -17,7 +17,6 @@
                                         </a>
                                     </li>
                                 {/foreach}
-
                         </aside>
                         <aside class="widget shop-filter">
                             <h2 class="sidebar-title text-center">PREZZO</h2>
@@ -25,10 +24,13 @@
                                 <div class="price-filter">
                                     <div id="slider-range"></div>
                                     <div class="price-slider-amount">
-                                        <input type="text" id="amount" name="price" placeholder="PREZZO MAX"/>
-                                        <div class="widget-buttom">
-                                            <input type="submit" value="Filter"/>
-                                        </div>
+                                        <form action="low_to_high.php" method="post">
+                                            <input type="submit" value="Dal più basso al più alto"/>
+                                        </form>
+                                        <br>
+                                        <form action="high_to_low.php" method="post">
+                                            <input type="submit" value="Dal più alto al più basso"/>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -45,25 +47,26 @@
                         <div class="row tab-pane fade in active" id="home">
                             <div class="shop-single-product-area">
                                 {if (!empty($books))}
-                                {foreach from=$books item="book"}
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-banner">
-                                        <div class="product-wrapper">
-                                            <a href="Product-item.php?id={$book.id}" class="single-banner-image-wrapper">
-                                                <img alt="" src="{$book.pic}" width= 150px height="170px">
-                                            </a>
-                                        </div>
-                                        <div class="banner-bottom text-center">
-                                            <div class="banner-bottom-title">
-                                                <a href="Product-item.php?id={$book.id}">{$book.title}</a>
+                                    {foreach from=$books item="book"}
+                                        <div class="col-sm-2">
+                                                <div class="single-banner">
+                                                    <div class="product-wrapper">
+                                                        <a href="Product-item.php?id={$book.id}"
+                                                           class="single-banner-image-wrapper">
+                                                            <img alt="" src="{$book.pic}" width=150px height="170px">
+                                                        </a>
+                                                    </div>
+                                                    <div class="banner-bottom text-center">
+                                                        <div class="banner-bottom-title">
+                                                            <a href="Product-item.php?id={$book.id}">{$book.title}</a>
+                                                        </div>
+                                                        <div class="rating-icon">
+                                                            <p>{$book.price}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="rating-icon">
-                                                <p>{$book.price}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/foreach}
+                                    {/foreach}
                                 {else}
                                     <div></div>
                                 {/if}

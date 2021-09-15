@@ -11,6 +11,9 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">
+
+
 
     <!-- all css here -->
     <!-- bootstrap v3.3.6 css -->

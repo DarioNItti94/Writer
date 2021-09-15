@@ -555,6 +555,7 @@ body {
 
 .single-banner > a, .product-image > a, .product-tabs a, .left-item > a, .tag-list a, .check-out-area .panel-default > .panel-heading h4.panel-title a, .single-team-member > a, .footer-left > a, .single-blog > a {
     display: block;
+    margin-top: auto;
 }
 
 .banner-bottom-title > a {
@@ -683,6 +684,22 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-image img {
+    max-width: 10%;
+}
+.product-info {
+    margin-top: auto;
+}
+@media (max-width: 920px) {
+    .product-card {
+        flex: 1 21%;
+    }
+}
 
 .section-title::before {
     background: #bbbbbb none repeat scroll 0 0;
@@ -755,10 +772,10 @@ body {
 }
 
 .single-banner {
-    border: 1px solid #ddd;
     margin-top: 30px;
-    position: relative;
+    position: absolute;
     transition: all 0.4s ease 0s;
+
 }
 
 .featured-product-list .banner-bottom > a, .shop-single-product-area .banner-bottom > a {
@@ -2189,6 +2206,11 @@ a.wish-btn {
     height: 1px;
     position: absolute;
     width: 100%;
+}
+.grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 
 .social-share-icon > li {

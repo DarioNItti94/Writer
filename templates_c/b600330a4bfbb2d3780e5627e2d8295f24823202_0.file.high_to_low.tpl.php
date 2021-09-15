@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:52:58
-  from 'C:\xampp\htdocs\Writer\templates\products.tpl' */
+/* Smarty version 3.1.39, created on 2021-09-15 11:30:07
+  from 'C:\xampp\htdocs\Writer\templates\high_to_low.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141c27a6f7ac9_88379277',
+  'unifunc' => 'content_6141bd1f6a72d4_75496904',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '90dadd389232011eac2a88311e519d4870c1cc22' => 
+    'b600330a4bfbb2d3780e5627e2d8295f24823202' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Writer\\templates\\products.tpl',
-      1 => 1631699577,
+      0 => 'C:\\xampp\\htdocs\\Writer\\templates\\high_to_low.tpl',
+      1 => 1631698206,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6141c27a6f7ac9_88379277 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6141bd1f6a72d4_75496904 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Tutti i Prodotti'), 0, false);
 ?>
 
@@ -66,6 +66,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                         <form action="high_to_low.php" method="post">
                                             <input type="submit" value="Dal più alto al più basso"/>
                                         </form>
+                                        <a class="fa fa-close" href="Products.php"> ELIMINA FILTRO</a>
                                     </div>
                                 </div>
                             </div>
@@ -89,28 +90,28 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['book']->value) {
 $_smarty_tpl->tpl_vars['book']->do_else = false;
 ?>
                                         <div class="col-sm-2">
-                                                <div class="single-banner">
-                                                    <div class="product-wrapper">
-                                                        <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
+                                            <div class="single-banner">
+                                                <div class="product-wrapper">
+                                                    <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
 "
-                                                           class="single-banner-image-wrapper">
-                                                            <img alt="" src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
+                                                       class="single-banner-image-wrapper">
+                                                        <img alt="" src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
 " width=150px height="170px">
-                                                        </a>
-                                                    </div>
-                                                    <div class="banner-bottom text-center">
-                                                        <div class="banner-bottom-title">
-                                                            <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
+                                                    </a>
+                                                </div>
+                                                <div class="banner-bottom text-center">
+                                                    <div class="banner-bottom-title">
+                                                        <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['book']->value['title'];?>
 </a>
-                                                        </div>
-                                                        <div class="rating-icon">
-                                                            <p><?php echo $_smarty_tpl->tpl_vars['book']->value['price'];?>
+                                                    </div>
+                                                    <div class="rating-icon">
+                                                        <p><?php echo $_smarty_tpl->tpl_vars['book']->value['price'];?>
 </p>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                     <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

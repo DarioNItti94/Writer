@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-14 18:22:31
+/* Smarty version 3.1.39, created on 2021-09-15 09:35:40
   from 'C:\xampp\htdocs\Writer\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6140cc4771a435_35595729',
+  'unifunc' => 'content_6141a24c4bbb52_06547128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eae34e73321ecbc42b088318a870d75ab77c771' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\header.tpl',
-      1 => 1631636550,
+      1 => 1631691220,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6140cc4771a435_35595729 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6141a24c4bbb52_06547128 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html class="no-js" lang="it">
 <head>
@@ -35,6 +35,9 @@ function content_6140cc4771a435_35595729 (Smarty_Internal_Template $_smarty_tpl)
     <!-- Place favicon.ico in the root directory -->
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">
+
+
 
     <!-- all css here -->
     <!-- bootstrap v3.3.6 css -->

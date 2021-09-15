@@ -66,7 +66,7 @@
                                         <form action="" id="payment-form">
                                             <ul class="form-list">
                                                 <li class="control">
-                                                    <input type="radio" class="radio" title="Credit Card (saved)"
+                                                    <input type="radio" class="radio" checked
                                                             id="p_method_ccsave">
                                                     <label for="p_method_ccsave">Contrassegno(+8€) </label>
                                                 </li>

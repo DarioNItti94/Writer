@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Aggiungi un libro</h4>
-                        <form enctype="multipart/form-data" action="insert_book.php" method="post">
+                        <form enctype="multipart/form-data" id="my_form" action="insert_book.php" method="post">
                             <div class="form-group">
                                 <label for="exampleInputUsername1">ISBN</label>
                                 <input class="form-control" type="text" id="isbn" name="isbn">
@@ -45,8 +45,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Categoria</label>
-                                <input class="form-control" type="number" id="categoria" name="categoria" min="1"
-                                       max="3">
+                                <select id="categoria" name="categoria" class="form-control" form="my_form">
+                                    <option value="1">Avventura</option>
+                                    <option value="2">Fantasy</option>
+                                    <option value="3">Romanzi</option>
+                                </select>
+
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Autore</label>

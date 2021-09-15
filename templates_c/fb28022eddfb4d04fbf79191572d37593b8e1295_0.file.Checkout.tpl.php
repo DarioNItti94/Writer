@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 18:56:14
+/* Smarty version 3.1.39, created on 2021-09-15 09:53:56
   from 'C:\xampp\htdocs\Writer\templates\Checkout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f82ae857cc3_87432947',
+  'unifunc' => 'content_6141a694b19039_61329596',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fb28022eddfb4d04fbf79191572d37593b8e1295' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\Checkout.tpl',
-      1 => 1631552138,
+      1 => 1631692419,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_613f82ae857cc3_87432947 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6141a694b19039_61329596 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\Writer\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Checkout'), 0, false);
 ?>
@@ -107,7 +107,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                         <form action="" id="payment-form">
                                             <ul class="form-list">
                                                 <li class="control">
-                                                    <input type="radio" class="radio" title="Credit Card (saved)"
+                                                    <input type="radio" class="radio" checked
                                                             id="p_method_ccsave">
                                                     <label for="p_method_ccsave">Contrassegno(+8€) </label>
                                                 </li>

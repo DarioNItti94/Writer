@@ -1,30 +1,4 @@
-<?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:29:37
-  from 'C:\xampp\htdocs\Writer\templates\category.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_6141bd01a7feb0_76714770',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '743eac3be697e6d951ec73f7f2d0ada6bfde0a4d' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\Writer\\templates\\category.tpl',
-      1 => 1631698059,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-    'file:header.tpl' => 1,
-    'file:footer.tpl' => 1,
-  ),
-),false)) {
-function content_6141bd01a7feb0_76714770 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Tutti i Prodotti'), 0, false);
-?>
+{include file="header.tpl" title='Tutti i Prodotti'}
 
 <div class="shopping-area section-padding">
     <div class="container">
@@ -35,22 +9,14 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
                         <aside class="widget widget-categories">
                             <h2 class="sidebar-title text-center">CATEGORIE</h2>
                             <ul class="sidebar-menu">
-                                <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category');
-$_smarty_tpl->tpl_vars['category']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['category']->value) {
-$_smarty_tpl->tpl_vars['category']->do_else = false;
-?>
+                                {foreach from=$categories item="category"}
                                     <li>
-                                        <a href="category.php?id_category=<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
-">
-                                            <i class="fa fa-angle-double-right"><?php echo $_smarty_tpl->tpl_vars['category']->value['name'];?>
-</i>
+                                        <a href="category.php?id_category={$category.id}">
+                                            <i class="fa fa-angle-double-right">{$category.name}</i>
+
                                         </a>
                                     </li>
-                                <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                {/foreach}
                         </aside>
                         <aside class="widget shop-filter">
                             <h2 class="sidebar-title text-center">PREZZO</h2>
@@ -65,6 +31,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                         <form action="high_to_low.php" method="post">
                                             <input type="submit" value="Dal più alto al più basso"/>
                                         </form>
+                                        <a class="fa fa-close" href="Products.php"> ELIMINA FILTRO</a>
                                     </div>
                                 </div>
                             </div>
@@ -75,48 +42,35 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <div class="shop-tab-area">
                     <div class="shop-tab-list">
-                        <h2><?php echo $_smarty_tpl->tpl_vars['cat']->value['name'];?>
-</h2>
+                        <h2>TUTTI I PRODOTTI</h2>
                     </div>
                     <div class="tab-content">
                         <div class="row tab-pane fade in active" id="home">
                             <div class="shop-single-product-area">
-                                <?php if ((!empty($_smarty_tpl->tpl_vars['books']->value))) {?>
-                                    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['books']->value, 'book');
-$_smarty_tpl->tpl_vars['book']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['book']->value) {
-$_smarty_tpl->tpl_vars['book']->do_else = false;
-?>
+                                {if (!empty($books))}
+                                    {foreach from=$books item="book"}
                                         <div class="col-sm-2">
                                             <div class="single-banner">
                                                 <div class="product-wrapper">
-                                                    <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
-"
+                                                    <a href="Product-item.php?id={$book.id}"
                                                        class="single-banner-image-wrapper">
-                                                        <img alt="" src="<?php echo $_smarty_tpl->tpl_vars['book']->value['pic'];?>
-" width=150px height="170px">
+                                                        <img alt="" src="{$book.pic}" width=150px height="170px">
                                                     </a>
                                                 </div>
                                                 <div class="banner-bottom text-center">
                                                     <div class="banner-bottom-title">
-                                                        <a href="Product-item.php?id=<?php echo $_smarty_tpl->tpl_vars['book']->value['id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['book']->value['title'];?>
-</a>
+                                                        <a href="Product-item.php?id={$book.id}">{$book.title}</a>
                                                     </div>
                                                     <div class="rating-icon">
-                                                        <p><?php echo $_smarty_tpl->tpl_vars['book']->value['price'];?>
-</p>
+                                                        <p>{$book.price}</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                                <?php } else { ?>
+                                    {/foreach}
+                                {else}
                                     <div></div>
-                                <?php }?>
+                                {/if}
                             </div>
                         </div>
                     </div>
@@ -127,6 +81,4 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 <!-- Shop Area End -->
 <!-- Footer Area Start -->
-<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
-}
+{include file="footer.tpl"}
