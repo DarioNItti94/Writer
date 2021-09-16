@@ -1,25 +1,25 @@
 <?php
-
 include "lib.inc.php";
 $smarty = includesmarty();
-$admin = "admin@web.it";
-if (!isset($_SESSION["user"])) {
+
+
+if (empty($_SESSION["user"])) {
     $smarty->display("login.tpl");
-    exit;
-} elseif ($_SESSION["user"] == $admin){
-header("Location:Dashboard.php");
 } else {
-    header("Location:profile.php");
+    $email = ($_SESSION["user"]);
+    $sql = "SELECT * FROM user WHERE email='$email' ";
+    $result = mysqli_query($con, $sql);
+    $row = mysqli_fetch_array($result);
+    $role = $row['role_id'];
+   switch ($role){
+       case 2:
+           header("Location:profile.php");
+           break;
+       case 1:
+           header("Location:Dashboard.php");
+           break;
+   }
 }
-
-
-
-
-
-
-
-
-
 
 
 

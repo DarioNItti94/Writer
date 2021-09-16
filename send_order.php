@@ -24,7 +24,8 @@ if ($row_control == 1) {
     if (mail($email, $subject, $body, $headers)) {
         header("Location:Dashboard.php");
     } else {
-        header("Location:Error.php");
+        $error="Qualcosa è andato storto, riprova tra qualche minuto!";
+        header("Location:Error.php?msg=" . $error);
 
     }
 }

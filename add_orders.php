@@ -36,8 +36,8 @@ $headers = "Writer";
 if (mail($email, $subject, $body, $headers)) {
     header("Location:Success.php");
 } else {
-    header("Location:Error.php");
-
+    $error="qualcosa è andato storto, riprova tra qualche minuto";
+    header("Location:Error.php?msg=" . $error);
 }
 
 

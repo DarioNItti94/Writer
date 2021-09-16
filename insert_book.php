@@ -67,7 +67,8 @@ if ($num == 1) {
         header('location:All-product.php');
 
     } else {
-        header('location:Error.php');
+        $error="Qualcosa è andato storto, riprova tra qualche minuto";
+        header("Location:Error.php?msg=" . $error);
 
     }
 

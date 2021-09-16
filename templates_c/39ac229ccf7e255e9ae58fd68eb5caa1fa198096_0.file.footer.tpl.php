@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-13 17:36:06
+/* Smarty version 3.1.39, created on 2021-09-16 11:21:25
   from 'C:\xampp\htdocs\Writer\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_613f6fe6e42ba1_85713800',
+  'unifunc' => 'content_61430c95888b80_18730667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39ac229ccf7e255e9ae58fd68eb5caa1fa198096' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\footer.tpl',
-      1 => 1631547299,
+      1 => 1631784084,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_613f6fe6e42ba1_85713800 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61430c95888b80_18730667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
     <div class="footer-top-area">
         <div class="container">
@@ -50,13 +50,13 @@ function content_613f6fe6e42ba1_85713800 (Smarty_Internal_Template $_smarty_tpl)
 
                 <div class="col-md-2 hidden-sm">
                     <div class="single-footer">
-                        <h2 class="footer-title">My Account</h2>
+                        <h2 class="footer-title">Il Mio Account</h2>
                         <ul class="footer-list">
                             <li><a href="profile.php">Account</a></li>
-                            <li><a href="account.html">Login</a></li>
-                            <li><a href="Cart.tpl">Carrello</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="Checkout.tpl">Checkout</a></li>
+                            <li><a href="Login.php">Login</a></li>
+                            <li><a href="Cart.php">Carrello</a></li>
+                            <li><a href="Login.php">Wishlist</a></li>
+                            <li><a href="Checkout.php">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,31 +64,31 @@ function content_613f6fe6e42ba1_85713800 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="col-md-5 col-md-8">
                     <div class="single-footer footer-newsletter" >
                         <h2 class="footer-title">Newsletter</h2>
-                        <form action="#" method="post">
+                        <form action="newsletter.php" method="post">
                             <div>
-                                <input type="text" placeholder="email address">
+                                <input type="email" name="newsletter" placeholder="Inserisci la tua email">
                             </div>
-                            <button class="btn btn-search btn-small" type="submit">SUBSCRIBE</button>
+                            <button class="btn btn-search btn-small" type="submit">Iscriviti</button>
                             <i class="flaticon-networking"></i>
                         </form>
                         <ul class="social-icon">
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com">
                                     <i class="flaticon-social"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.google.com">
                                     <i class="flaticon-social-1"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com">
                                     <i class="flaticon-social-2"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.youtube.com/">
                                     <i class="flaticon-video"></i>
                                 </a>
                             </li>

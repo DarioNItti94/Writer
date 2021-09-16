@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 18:35:07
+/* Smarty version 3.1.39, created on 2021-09-16 11:41:33
   from 'C:\xampp\htdocs\Writer\templates\admin-dash.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_614220bb7480e3_97059498',
+  'unifunc' => 'content_6143114deee2b6_83334233',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '508480e64fab67d92e5b4abd3d5f8552d9fb2387' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\admin-dash.tpl',
-      1 => 1631723697,
+      1 => 1631785292,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_614220bb7480e3_97059498 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6143114deee2b6_83334233 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -32,7 +32,9 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
             <div class="col-md-12 grid-margin">
                 <div class="row">
                     <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                        <h3 class="font-weight-bold">Benvenuto Epic Admin</h3>
+                        <h3 class="font-weight-bold">Benvenuto <?php echo $_smarty_tpl->tpl_vars['admin']->value['first_name'];?>
+ <?php echo $_smarty_tpl->tpl_vars['admin']->value['last_name'];?>
+</h3>
                     </div>
                 </div>
             </div>
@@ -63,8 +65,9 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                     <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
                         <div class="card card-light-blue">
                             <div class="card-body">
-                                <p class="mb-4">Number of Meetings</p>
-                                <p class="fs-30 mb-2">34040</p>
+                                <p class="mb-4">Numero recensioni</p>
+                                <p class="fs-30 mb-2"><?php echo $_smarty_tpl->tpl_vars['review']->value;?>
+</p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +89,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
                         <div class="list-wrapper pt-2">
                             <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
                                 <li>
-                                    <table class="table">
+                                    <table class="table table-responsive">
                                         <thead>
                                         <tr>
                                             <th>Libro</th>
@@ -111,7 +114,7 @@ $_smarty_tpl->tpl_vars['review']->do_else = false;
 </td>
                                                     <td><?php echo $_smarty_tpl->tpl_vars['review']->value['submission_date'];?>
 </td>
-                                                    <td><?php echo $_smarty_tpl->tpl_vars['order']->value['rating'];?>
+                                                    <td><?php echo $_smarty_tpl->tpl_vars['review']->value['rating'];?>
 </td>
                                                     <td><?php echo $_smarty_tpl->tpl_vars['review']->value['body'];?>
 </td>

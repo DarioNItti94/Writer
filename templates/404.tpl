@@ -8,7 +8,8 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="error-text text-center">
-							<h1>OPPS! PAGE NOT FOUND</h1>
+							<h1>OPPS! PAGE NOT FOUND</h1><br>
+							<h3>{$error}</h3><br>
 							<a href="index.php">BACK TO HOME PAGE</a>
 						</div>
 					</div>

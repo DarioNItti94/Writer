@@ -27,13 +27,13 @@
 
                 <div class="col-md-2 hidden-sm">
                     <div class="single-footer">
-                        <h2 class="footer-title">My Account</h2>
+                        <h2 class="footer-title">Il Mio Account</h2>
                         <ul class="footer-list">
                             <li><a href="profile.php">Account</a></li>
-                            <li><a href="account.html">Login</a></li>
-                            <li><a href="Cart.tpl">Carrello</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="Checkout.tpl">Checkout</a></li>
+                            <li><a href="Login.php">Login</a></li>
+                            <li><a href="Cart.php">Carrello</a></li>
+                            <li><a href="Login.php">Wishlist</a></li>
+                            <li><a href="Checkout.php">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -41,31 +41,31 @@
                 <div class="col-md-5 col-md-8">
                     <div class="single-footer footer-newsletter" >
                         <h2 class="footer-title">Newsletter</h2>
-                        <form action="#" method="post">
+                        <form action="newsletter.php" method="post">
                             <div>
-                                <input type="text" placeholder="email address">
+                                <input type="email" name="newsletter" placeholder="Inserisci la tua email">
                             </div>
-                            <button class="btn btn-search btn-small" type="submit">SUBSCRIBE</button>
+                            <button class="btn btn-search btn-small" type="submit">Iscriviti</button>
                             <i class="flaticon-networking"></i>
                         </form>
                         <ul class="social-icon">
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com">
                                     <i class="flaticon-social"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.google.com">
                                     <i class="flaticon-social-1"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com">
                                     <i class="flaticon-social-2"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.youtube.com/">
                                     <i class="flaticon-video"></i>
                                 </a>
                             </li>

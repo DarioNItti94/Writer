@@ -163,9 +163,7 @@
                                                 <input type="text" placeholder="Stato" name="stato"/>
                                             </div>
                                             <br>
-                                            <p class="form-row order-notes">
-                                                <textarea placeholder="Additional information"></textarea>
-                                            </p>
+
                                             <input type="submit" class="btn button button-small" value="Salva">
                                         </form>
                                     </div>

@@ -46,7 +46,8 @@ if ($num == 1 AND $role==2) {
         $_SESSION['user'] = $email;
         header('location:Dashboard.php');
     } else {
-        $smarty->display("Error.php");
+       $error="Utente Username o Password sbagliata, Torna indietro";
+        header("Location:Error.php?msg=" . $error);
 
 
     }

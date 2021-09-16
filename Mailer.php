@@ -11,7 +11,9 @@ $headers = "Ciao $name";
 if (mail($to_email, $subject, $body, $headers)) {
     header("Location:admin-user.php");
 } else {
-    header("Location:Error.php");
-    $smarty->assign("error","email non inviata");
+    $error="Email non inviata";
+    header("Location:Error.php?msg=" . $error);
 
 }
+
+
