@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:52:58
+/* Smarty version 3.1.39, created on 2021-09-16 17:09:11
   from 'C:\xampp\htdocs\Writer\templates\products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141c27a6f7ac9_88379277',
+  'unifunc' => 'content_61435e170e8ea8_81411585',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '90dadd389232011eac2a88311e519d4870c1cc22' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\products.tpl',
-      1 => 1631699577,
+      1 => 1631804950,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6141c27a6f7ac9_88379277 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61435e170e8ea8_81411585 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Tutti i Prodotti'), 0, false);
 ?>
 
@@ -30,8 +30,16 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="search-bar">
+                    <form class="example" action="search.php" method="post" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <br><br>
                 <div class="shop-widget">
                     <div class="shop-widget-top">
+
                         <aside class="widget widget-categories">
                             <h2 class="sidebar-title text-center">CATEGORIE</h2>
                             <ul class="sidebar-menu">

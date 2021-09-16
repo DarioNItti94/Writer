@@ -13,7 +13,9 @@
                 <br><br>
                 <div class="shop-widget">
                     <div class="shop-widget-top">
+
                         <aside class="widget widget-categories">
+
                             <h2 class="sidebar-title text-center">CATEGORIE</h2>
                             <ul class="sidebar-menu">
                                 {foreach from=$categories item="category"}
@@ -24,7 +26,6 @@
                                         </a>
                                     </li>
                                 {/foreach}
-
                         </aside>
                         <aside class="widget shop-filter">
                             <h2 class="sidebar-title text-center">PREZZO</h2>
@@ -39,7 +40,6 @@
                                         <form action="high_to_low.php" method="post">
                                             <input type="submit" value="Dal più alto al più basso"/>
                                         </form>
-                                        <a class="fa fa-close" href="Products.php"> ELIMINA FILTRO</a>
                                     </div>
                                 </div>
                             </div>
@@ -50,13 +50,12 @@
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <div class="shop-tab-area">
                     <div class="shop-tab-list">
-                        <h2>DAL PIÙ ECONOMICO</h2>
+                        <h2>TUTTI I PRODOTTI</h2>
                     </div>
                     <div class="tab-content">
                         <div class="row tab-pane fade in active" id="home">
                             <div class="shop-single-product-area">
-                                {if (!empty($books))}
-                                    {foreach from=$books item="book"}
+                                {if (!empty($book))}
                                         <div class="col-sm-2">
                                             <div class="single-banner">
                                                 <div class="product-wrapper">
@@ -75,7 +74,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    {/foreach}
                                 {else}
                                     <div></div>
                                 {/if}

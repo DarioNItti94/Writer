@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:30:07
+/* Smarty version 3.1.39, created on 2021-09-16 17:02:35
   from 'C:\xampp\htdocs\Writer\templates\high_to_low.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141bd1f6a72d4_75496904',
+  'unifunc' => 'content_61435c8b867070_76777381',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b600330a4bfbb2d3780e5627e2d8295f24823202' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\high_to_low.tpl',
-      1 => 1631698206,
+      1 => 1631804548,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6141bd1f6a72d4_75496904 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61435c8b867070_76777381 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Tutti i Prodotti'), 0, false);
 ?>
 
@@ -30,6 +30,13 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="search-bar">
+                    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <br><br>
                 <div class="shop-widget">
                     <div class="shop-widget-top">
                         <aside class="widget widget-categories">

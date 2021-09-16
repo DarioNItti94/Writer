@@ -4,8 +4,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="search-bar">
+                    <form class="example" action="search.php" method="post" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <br><br>
                 <div class="shop-widget">
                     <div class="shop-widget-top">
+
                         <aside class="widget widget-categories">
                             <h2 class="sidebar-title text-center">CATEGORIE</h2>
                             <ul class="sidebar-menu">

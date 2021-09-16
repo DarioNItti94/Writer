@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 11:26:39
+/* Smarty version 3.1.39, created on 2021-09-16 17:02:34
   from 'C:\xampp\htdocs\Writer\templates\low_to_high.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141bc4f2b3b41_62891219',
+  'unifunc' => 'content_61435c8a437381_43351266',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f056a2779d657e0759a789d08ad05bf1b7a730bf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\low_to_high.tpl',
-      1 => 1631697996,
+      1 => 1631804548,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6141bc4f2b3b41_62891219 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61435c8a437381_43351266 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Tutti i Prodotti'), 0, false);
 ?>
 
@@ -30,6 +30,13 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="search-bar">
+                    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <br><br>
                 <div class="shop-widget">
                     <div class="shop-widget-top">
                         <aside class="widget widget-categories">
