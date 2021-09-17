@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e7dc5a2-7faf-4620-a87e-de15df311740" name="Default Changelist" comment="Well done(si sboccia)">
-      <change afterPath="$PROJECT_DIR$/add_address_cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Update_book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b0f1eb1aa2.40900490.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b1c03ff006.33000763.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b2636eed84.00874645.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b413ab6211.98600754.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b45f497cf0.07528268.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/img/IMG-6144b6a28d22b9.67491440.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Checkout.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Checkout.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/076687aaa9c71d922962288afd0d90f80e725ccd_0.file.my-account.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/076687aaa9c71d922962288afd0d90f80e725ccd_0.file.my-account.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/39ac229ccf7e255e9ae58fd68eb5caa1fa198096_0.file.footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/39ac229ccf7e255e9ae58fd68eb5caa1fa198096_0.file.footer.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/f056a2779d657e0759a789d08ad05bf1b7a730bf_0.file.low_to_high.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/f056a2779d657e0759a789d08ad05bf1b7a730bf_0.file.low_to_high.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/all-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order-details.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order-details.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sezione-libri.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sezione-libri.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_c/076f22d84c71c5f4ce099e85311ff4eb5a0e1e18_0.file.order-details.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/076f22d84c71c5f4ce099e85311ff4eb5a0e1e18_0.file.order-details.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_c/51599783daa936fd56d9304c0dd9b3934113fa30_0.file.sezione-libri.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/51599783daa936fd56d9304c0dd9b3934113fa30_0.file.sezione-libri.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_c/b600330a4bfbb2d3780e5627e2d8295f24823202_0.file.high_to_low.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/b600330a4bfbb2d3780e5627e2d8295f24823202_0.file.high_to_low.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates_c/fb28022eddfb4d04fbf79191572d37593b8e1295_0.file.Checkout.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/fb28022eddfb4d04fbf79191572d37593b8e1295_0.file.Checkout.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_c/fe5eccba7034b88aa8a76d752fcb12aba7aa67e6_0.file.404.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/fe5eccba7034b88aa8a76d752fcb12aba7aa67e6_0.file.404.tpl.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +82,7 @@
       <workItem from="1631719113374" duration="6130000" />
       <workItem from="1631777948140" duration="8063000" />
       <workItem from="1631803023876" duration="2996000" />
-      <workItem from="1631865197711" duration="3085000" />
+      <workItem from="1631865197711" duration="19216000" />
     </task>
     <task id="LOCAL-00001" summary="address , index-page,contact-page done">
       <created>1631290759783</created>
@@ -144,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631805669284</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Well done(si sboccia)">
+      <created>1631869528881</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631869528881</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

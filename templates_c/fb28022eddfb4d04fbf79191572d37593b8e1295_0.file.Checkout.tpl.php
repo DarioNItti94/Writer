@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-17 10:15:10
+/* Smarty version 3.1.39, created on 2021-09-17 12:32:03
   from 'C:\xampp\htdocs\Writer\templates\Checkout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61444e8e154d06_95684536',
+  'unifunc' => 'content_61446ea3a62365_65682230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fb28022eddfb4d04fbf79191572d37593b8e1295' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\Checkout.tpl',
-      1 => 1631866509,
+      1 => 1631867334,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_61444e8e154d06_95684536 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61446ea3a62365_65682230 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\Writer\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Checkout'), 0, false);
 ?>
@@ -202,7 +202,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                 <div class="cart-btn-3" id="review-buttons-container">
                                                     <p class="left">Dimenticato qualcosa? <a href="Cart.php">Torna al
                                                             carrello</a></p>
-                                                    <button type="submit" title="Place Order" 
+                                                    <button type="submit" title="Place Order"
                                                             class="btn btn-default">
                                                         <span>Acquista</span>
                                                     </button>

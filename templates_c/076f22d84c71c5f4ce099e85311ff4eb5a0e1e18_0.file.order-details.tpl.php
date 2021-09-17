@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-14 16:57:04
+/* Smarty version 3.1.39, created on 2021-09-17 12:15:53
   from 'C:\xampp\htdocs\Writer\templates\order-details.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6140b8408afb72_82322077',
+  'unifunc' => 'content_61446ad9516af4_62348724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '076f22d84c71c5f4ce099e85311ff4eb5a0e1e18' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\order-details.tpl',
-      1 => 1631628079,
+      1 => 1631873751,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header-admin.tpl' => 1,
   ),
 ),false)) {
-function content_6140b8408afb72_82322077 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61446ad9516af4_62348724 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Admin Dashboard'), 0, false);
 ?>
 
@@ -32,7 +32,7 @@ $_smarty_tpl->_subTemplateRender("file:header-admin.tpl", $_smarty_tpl->cache_id
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Striped Table</h4>
+                    <h4 class="card-title">Dettagli</h4>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>

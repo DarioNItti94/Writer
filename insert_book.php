@@ -26,7 +26,6 @@ $new_img_name = uniqid("IMG-", true) . '.' . $img_ex_lc;
 $img_uplad_path = 'templates/img/' . $new_img_name;
 move_uploaded_file($tmp_name, $img_uplad_path);
 
-
 /*
  *
  *
@@ -34,7 +33,6 @@ move_uploaded_file($tmp_name, $img_uplad_path);
  *
  *
  */
-
 
 $sql = "SELECT * FROM book WHERE isbn=$isbn";
 $result = mysqli_query($con, $sql);
