@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-16 11:21:25
+/* Smarty version 3.1.39, created on 2021-09-17 10:38:35
   from 'C:\xampp\htdocs\Writer\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61430c95888b80_18730667',
+  'unifunc' => 'content_6144540b956be7_68154670',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39ac229ccf7e255e9ae58fd68eb5caa1fa198096' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\footer.tpl',
-      1 => 1631784084,
+      1 => 1631867913,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61430c95888b80_18730667 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6144540b956be7_68154670 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer>
     <div class="footer-top-area">
         <div class="container">
@@ -52,7 +52,7 @@ function content_61430c95888b80_18730667 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="single-footer">
                         <h2 class="footer-title">Il Mio Account</h2>
                         <ul class="footer-list">
-                            <li><a href="profile.php">Account</a></li>
+                            <li><a href="Login.php">Account</a></li>
                             <li><a href="Login.php">Login</a></li>
                             <li><a href="Cart.php">Carrello</a></li>
                             <li><a href="Login.php">Wishlist</a></li>

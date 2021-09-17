@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-15 09:53:56
+/* Smarty version 3.1.39, created on 2021-09-17 10:15:10
   from 'C:\xampp\htdocs\Writer\templates\Checkout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6141a694b19039_61329596',
+  'unifunc' => 'content_61444e8e154d06_95684536',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fb28022eddfb4d04fbf79191572d37593b8e1295' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\Checkout.tpl',
-      1 => 1631692419,
+      1 => 1631866509,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6141a694b19039_61329596 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61444e8e154d06_95684536 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\Writer\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Checkout'), 0, false);
 ?>
@@ -82,7 +82,15 @@ $_smarty_tpl->tpl_vars['addr']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                 <?php } else { ?>
-                                                    <div></div>
+                                                    <div><p>Non hai un indirizzo?</p>
+                                                        <button type="button" class="btn btn-link" data-toggle="modal"
+                                                                data-target="#address-add"
+                                                                style="margin-left:-15px; margin-top: -10px ">Aggiungi
+                                                            il
+                                                            tuo indirizzo
+                                                    </div>
+                                                    <br>
+
                                                 <?php }?>
                                             </div>
                                         </div>
@@ -108,7 +116,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                             <ul class="form-list">
                                                 <li class="control">
                                                     <input type="radio" class="radio" checked
-                                                            id="p_method_ccsave">
+                                                           id="p_method_ccsave">
                                                     <label for="p_method_ccsave">Contrassegno(+8€) </label>
                                                 </li>
                                             </ul>
@@ -194,7 +202,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                 <div class="cart-btn-3" id="review-buttons-container">
                                                     <p class="left">Dimenticato qualcosa? <a href="Cart.php">Torna al
                                                             carrello</a></p>
-                                                    <button type="submit" title="Place Order" class="btn btn-default">
+                                                    <button type="submit" title="Place Order" 
+                                                            class="btn btn-default">
                                                         <span>Acquista</span>
                                                     </button>
                                                 </div>
@@ -211,6 +220,72 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
     </div>
 </form>
+<div class="modal fade" id="address-add" role="document">
+    <div class="modal-dialog">
+        <div class="modal-content"
+             style="background-color: #e6e6e6">
+            <h3 class="modal-title">&nbsp;&nbsp;&nbsp;INSERISCI IL
+                TUO
+                INDIRIZZO</h3>
+            <div class="modal-body">
+                <div class="coupon-info">
+                    <br>
+                    <p class="coupon-text">Aggiungi un nuovo
+                        indirizzo.</p>
+                    <form method="post"
+                          action="add_address_cart.php"
+                          id="add_address">
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Casa/Ufficio"
+                                   name="name"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Nome e Cognome"
+                                   name="utente"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Info Opzionali"
+                                   name="info"/>
+                        </p>
+
+                        <p class="form-row">
+                            <input type="text" placeholder="Via"
+                                   name="via"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text" placeholder="Città"
+                                   name="citta"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Provincia"
+                                   name="prov" maxlength="2"
+                                   size="2"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text" placeholder="Cap"
+                                   name="cap"/>
+                        </p>
+                        <div class="form-row">
+                            &nbsp;&nbsp;&nbsp;&nbsp; <input
+                                    type="text"
+                                    placeholder="Stato"
+                                    name="stato"/>
+                        </div>
+                        <br>
+
+                        <input type="submit"
+                               class="btn button button-small"
+                               value="Salva" form="add_address">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }

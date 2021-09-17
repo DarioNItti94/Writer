@@ -29,7 +29,7 @@
                     <div class="single-footer">
                         <h2 class="footer-title">Il Mio Account</h2>
                         <ul class="footer-list">
-                            <li><a href="profile.php">Account</a></li>
+                            <li><a href="Login.php">Account</a></li>
                             <li><a href="Login.php">Login</a></li>
                             <li><a href="Cart.php">Carrello</a></li>
                             <li><a href="Login.php">Wishlist</a></li>

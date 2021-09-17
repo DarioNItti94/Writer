@@ -41,7 +41,15 @@
                                                         <p>&nbsp;&nbsp;{$addr.state}</p>
                                                     {/foreach}
                                                 {else}
-                                                    <div></div>
+                                                    <div><p>Non hai un indirizzo?</p>
+                                                        <button type="button" class="btn btn-link" data-toggle="modal"
+                                                                data-target="#address-add"
+                                                                style="margin-left:-15px; margin-top: -10px ">Aggiungi
+                                                            il
+                                                            tuo indirizzo
+                                                    </div>
+                                                    <br>
+
                                                 {/if}
                                             </div>
                                         </div>
@@ -67,7 +75,7 @@
                                             <ul class="form-list">
                                                 <li class="control">
                                                     <input type="radio" class="radio" checked
-                                                            id="p_method_ccsave">
+                                                           id="p_method_ccsave">
                                                     <label for="p_method_ccsave">Contrassegno(+8€) </label>
                                                 </li>
                                             </ul>
@@ -140,7 +148,8 @@
                                                 <div class="cart-btn-3" id="review-buttons-container">
                                                     <p class="left">Dimenticato qualcosa? <a href="Cart.php">Torna al
                                                             carrello</a></p>
-                                                    <button type="submit" title="Place Order" class="btn btn-default">
+                                                    <button type="submit" title="Place Order"
+                                                            class="btn btn-default">
                                                         <span>Acquista</span>
                                                     </button>
                                                 </div>
@@ -157,4 +166,70 @@
         </div>
     </div>
 </form>
+<div class="modal fade" id="address-add" role="document">
+    <div class="modal-dialog">
+        <div class="modal-content"
+             style="background-color: #e6e6e6">
+            <h3 class="modal-title">&nbsp;&nbsp;&nbsp;INSERISCI IL
+                TUO
+                INDIRIZZO</h3>
+            <div class="modal-body">
+                <div class="coupon-info">
+                    <br>
+                    <p class="coupon-text">Aggiungi un nuovo
+                        indirizzo.</p>
+                    <form method="post"
+                          action="add_address_cart.php"
+                          id="add_address">
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Casa/Ufficio"
+                                   name="name"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Nome e Cognome"
+                                   name="utente"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Info Opzionali"
+                                   name="info"/>
+                        </p>
+
+                        <p class="form-row">
+                            <input type="text" placeholder="Via"
+                                   name="via"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text" placeholder="Città"
+                                   name="citta"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text"
+                                   placeholder="Provincia"
+                                   name="prov" maxlength="2"
+                                   size="2"/>
+                        </p>
+                        <p class="form-row">
+                            <input type="text" placeholder="Cap"
+                                   name="cap"/>
+                        </p>
+                        <div class="form-row">
+                            &nbsp;&nbsp;&nbsp;&nbsp; <input
+                                    type="text"
+                                    placeholder="Stato"
+                                    name="stato"/>
+                        </div>
+                        <br>
+
+                        <input type="submit"
+                               class="btn button button-small"
+                               value="Salva" form="add_address">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {include file="footer.tpl"}

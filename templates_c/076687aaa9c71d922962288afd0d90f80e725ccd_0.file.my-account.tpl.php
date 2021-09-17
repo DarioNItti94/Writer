@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-16 12:08:41
+/* Smarty version 3.1.39, created on 2021-09-16 17:24:24
   from 'C:\xampp\htdocs\Writer\templates\my-account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_614317a9678320_44176655',
+  'unifunc' => 'content_614361a8f38f29_11639102',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '076687aaa9c71d922962288afd0d90f80e725ccd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Writer\\templates\\my-account.tpl',
-      1 => 1631786920,
+      1 => 1631786992,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_614317a9678320_44176655 (Smarty_Internal_Template $_smarty_tpl) {
+function content_614361a8f38f29_11639102 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'Il tuo profilo'), 0, false);
 ?>
 
@@ -211,7 +211,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                 <input type="text" placeholder="Stato" name="stato"/>
                                             </div>
                                             <br>
-                                           
+
                                             <input type="submit" class="btn button button-small" value="Salva">
                                         </form>
                                     </div>
